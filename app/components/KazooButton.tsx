@@ -3,48 +3,45 @@
 export default function KazooButton() {
   const playKazoo = () => {
     const ctx = new AudioContext();
+    const now = ctx.currentTime;
 
-    const oscillator = ctx.createOscillator();
-    const gainNode = ctx.createGain();
+    // Oscillator 1: sawtooth with frequency wobble
+    const saw = ctx.createOscillator();
+    saw.type = "sawtooth";
+    saw.frequency.setValueAtTime(220, now);
+    saw.frequency.linearRampToValueAtTime(260, now + 0.35 / 3);
+    saw.frequency.linearRampToValueAtTime(240, now + (0.35 * 2) / 3);
+    saw.frequency.linearRampToValueAtTime(280, now + 0.35);
 
-    // Vibrato via LFO
-    const lfo = ctx.createOscillator();
-    const lfoGain = ctx.createGain();
+    // Oscillator 2: square at 440Hz
+    const square = ctx.createOscillator();
+    square.type = "square";
+    square.frequency.setValueAtTime(440, now);
 
-    lfo.frequency.value = 12; // 12Hz vibrato
-    lfoGain.gain.value = 8;   // vibrato depth in Hz
+    // Shared gain envelope
+    const gain = ctx.createGain();
+    gain.gain.setValueAtTime(0, now);
+    gain.gain.linearRampToValueAtTime(0.18, now + 0.05);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
 
-    lfo.connect(lfoGain);
-    lfoGain.connect(oscillator.frequency);
+    saw.connect(gain);
+    square.connect(gain);
+    gain.connect(ctx.destination);
 
-    oscillator.type = "sawtooth";
-    oscillator.frequency.value = 320;
-
-    gainNode.gain.setValueAtTime(0, ctx.currentTime);
-    gainNode.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.05);
-    gainNode.gain.linearRampToValueAtTime(0, ctx.currentTime + 0.6);
-
-    oscillator.connect(gainNode);
-    gainNode.connect(ctx.destination);
-
-    lfo.start();
-    oscillator.start();
-    oscillator.stop(ctx.currentTime + 0.6);
-    lfo.stop(ctx.currentTime + 0.6);
+    saw.start(now);
+    square.start(now);
+    saw.stop(now + 0.65);
+    square.stop(now + 0.65);
   };
 
   return (
     <button
       onClick={playKazoo}
-      className="font-pixel text-xs px-3 py-2 hover:opacity-80 transition-opacity"
-      style={{
-        color: "#e8c84a",
-        border: "2px solid #e8c84a",
-        backgroundColor: "transparent",
-      }}
+      className="font-vt323 text-xl hover:opacity-80 transition-opacity"
+      style={{ color: "#e8c84a", background: "none", border: "none", cursor: "pointer" }}
       aria-label="Play kazoo sound"
     >
-      * [kazoo] *
+      ♫ [kazoo]
     </button>
   );
 }
