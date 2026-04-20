@@ -5,7 +5,7 @@ export default function Header() {
     <header className="px-6 pt-10 pb-6 max-w-4xl mx-auto text-center">
       {/* Name */}
       <h1
-        className="font-pixel mb-4 leading-relaxed"
+        className="font-pixel mb-4"
         style={{
           fontSize: "24px",
           color: "#ffff00",
@@ -41,7 +41,7 @@ export default function Header() {
           >
             about
           </Link>
-          <span className="font-vt323 text-xl" style={{ color: "#00ffff" }}>|</span>
+          <span className="font-vt323 text-xl" style={{ color: "#00ffff" }} aria-hidden="true">|</span>
           <a
             href="mailto:alexmiz@gmail.com"
             className="font-vt323 text-xl hover:opacity-75 transition-opacity"
