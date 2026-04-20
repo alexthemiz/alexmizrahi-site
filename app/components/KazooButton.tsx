@@ -22,7 +22,8 @@ export default function KazooButton() {
     const gain = ctx.createGain();
     gain.gain.setValueAtTime(0, now);
     gain.gain.linearRampToValueAtTime(0.18, now + 0.05);
-    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.58);
+    gain.gain.linearRampToValueAtTime(0, now + 0.65);
 
     saw.connect(gain);
     square.connect(gain);
@@ -32,6 +33,9 @@ export default function KazooButton() {
     square.start(now);
     saw.stop(now + 0.65);
     square.stop(now + 0.65);
+    saw.addEventListener("ended", () => {
+      ctx.close();
+    });
   };
 
   return (
