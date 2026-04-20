@@ -56,7 +56,7 @@ export default function Accordion() {
                       className="font-vt323 ml-3"
                       style={{ fontSize: "18px", opacity: 0.6 }}
                     >
-                      // {section.meta}
+                      {`// ${section.meta}`}
                     </span>
                   )}
                   {section.url && (
@@ -64,7 +64,7 @@ export default function Accordion() {
                       className="font-vt323 ml-2"
                       style={{ fontSize: "18px", opacity: 0.6 }}
                     >
-                      // {section.url}
+                      {`// ${section.url}`}
                     </span>
                   )}
                 </span>
