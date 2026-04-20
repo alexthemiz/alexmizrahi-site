@@ -18,7 +18,7 @@ export const SECTIONS: Section[] = [
     url: "thesmoreslab.com",
     description:
       "Turned the traditional, humdrum s'mores bar into an interactive culinary and art experience where participants build never-before-s'mored creations from a vast range of ingredients, then give them full fashion-style photoshoots. Equal parts food science, participatory art, and campfire nostalgia.",
-    tag: "make your next event sweeter  * available for booking *",
+    tag: "make your next event sweeter * available for booking *",
     openColor: "#ffe5cc",
   },
   {
