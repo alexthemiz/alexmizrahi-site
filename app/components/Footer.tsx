@@ -13,7 +13,7 @@ export default function Footer() {
         className="font-vt323"
         style={{ fontSize: "16px", color: "#666699" }}
       >
-        © 2025 alex mizrahi. all rights reserved. probably.
+        © {new Date().getFullYear()} alex mizrahi. all rights reserved. probably.
       </p>
       <KazooButton />
     </footer>

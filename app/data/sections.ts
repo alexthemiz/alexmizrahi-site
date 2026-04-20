@@ -57,7 +57,6 @@ export const SECTIONS: Section[] = [
     meta: "A decade spanning philanthropy, hospitality, and advocacy.",
     description:
       "The Open Society Foundations: Senior Communications Specialist. Media intelligence reports, global intranet management, internal communications, content writing and editing, media monitoring.\n\nThe Assemblage: Director of Communications. Member, guest, and community engagement; media outreach; event marketing.",
-    tag: "",
     openColor: "#cce8ff",
     photoColor: "#9acef5",
     accentColor: "#1a5a9a",
@@ -68,7 +67,6 @@ export const SECTIONS: Section[] = [
     title: "Copywriting",
     description:
       "SapientRazorfish: Mercedes-Benz, smartUSA.\n\nROAR Groupe: JPMorgan Chase, Chase Freedom, Sapphire, Ultimate Rewards.\n\nBlue State Digital: US Olympic Committee, Be The Match, Purina.",
-    tag: "",
     openColor: "#e8ccff",
     photoColor: "#d09af5",
     accentColor: "#6a1a9a",

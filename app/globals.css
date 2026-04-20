@@ -55,3 +55,7 @@ body {
 .blink {
   animation: blink 1s step-start infinite;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .blink { animation: none; }
+}
