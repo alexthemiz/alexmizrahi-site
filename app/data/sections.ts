@@ -5,7 +5,7 @@ export type Section = {
   meta?: string;
   url?: string;
   description: string;
-  tag: string;
+  tag?: string;
   openColor: string; // background when open
   photoColor: string;   // background for photo placeholder boxes
   accentColor: string;  // eyebrow text + CTA tag border/text color

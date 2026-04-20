@@ -37,6 +37,7 @@ export default function Accordion() {
               <div className="flex flex-col gap-1 flex-1 min-w-0">
                 <span
                   className="font-pixel"
+                  aria-hidden="true"
                   style={{ fontSize: "8px", color: "#4a4a7a" }}
                 >
                   {section.number}
