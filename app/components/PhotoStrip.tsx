@@ -14,7 +14,7 @@ export default function PhotoStrip({ photoColor }: PhotoStripProps) {
             minWidth: "100px",
             height: "128px",
             backgroundColor: photoColor,
-            border: "1px solid #2e2e5a",
+            border: "1px solid #c0c0c0",
           }}
         >
           <span

@@ -5,8 +5,8 @@ export default function Footer() {
     <footer
       className="px-6 py-6 max-w-4xl mx-auto flex items-center justify-between"
       style={{
-        backgroundColor: "#16213e",
-        borderTop: "2px solid #2e2e5a",
+        backgroundColor: "#000080",
+        borderTop: "2px solid #c0c0c0",
       }}
     >
       <p

@@ -10,7 +10,7 @@ const RAINBOW_STYLE = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen" style={{ backgroundColor: "#1a1a2e" }}>
+    <main className="min-h-screen" style={{ backgroundColor: "#000080" }}>
       <Header />
 
       {/* Rainbow divider */}

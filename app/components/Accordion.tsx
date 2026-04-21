@@ -22,8 +22,8 @@ export default function Accordion() {
             key={section.id}
             className={isActivations && isOpen ? "kazoo-cursor" : ""}
             style={{
-              border: "1px solid #2e2e5a",
-              backgroundColor: "#16213e",
+              border: "1px solid #c0c0c0",
+              backgroundColor: "#000080",
               marginBottom: "4px",
             }}
           >
