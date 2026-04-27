@@ -103,8 +103,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
           alt={photo.caption ?? ""}
           style={{
             width: "200px",
-            height: "160px",
-            objectFit: "cover",
+            height: "auto",
             display: "block",
           }}
         />
