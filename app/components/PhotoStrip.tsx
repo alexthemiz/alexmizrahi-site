@@ -57,6 +57,7 @@ export default function PhotoStrip({ photos, photoColor, accentColor }: PhotoStr
             justifyContent: "center",
           }}
         >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={encodeURI(openPhoto.src)}
             alt={openPhoto.caption ?? ""}

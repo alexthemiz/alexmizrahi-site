@@ -97,6 +97,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
 
       {/* Photo + decorative scrollbar */}
       <div style={{ display: "flex" }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={encodedSrc}
           alt={photo.caption ?? ""}
