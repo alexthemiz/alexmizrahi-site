@@ -15,11 +15,16 @@ export default function PhotoStrip({ photos, photoColor, accentColor }: PhotoStr
 
   useEffect(() => {
     if (!openPhoto) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpenPhoto(null);
     };
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
+    };
   }, [openPhoto]);
 
   return (
@@ -28,9 +33,9 @@ export default function PhotoStrip({ photos, photoColor, accentColor }: PhotoStr
         {photos.length === 0 ? (
           <PlaceholderFrame photoColor={photoColor} />
         ) : (
-          photos.map((photo, i) => (
+          photos.map((photo) => (
             <IEFrame
-              key={i}
+              key={photo.src}
               photo={photo}
               accentColor={accentColor}
               onClick={() => setOpenPhoto(photo)}
@@ -67,6 +72,8 @@ export default function PhotoStrip({ photos, photoColor, accentColor }: PhotoStr
 function PlaceholderFrame({ photoColor }: { photoColor: string }) {
   return (
     <div
+      role="img"
+      aria-label="No photos available"
       style={{
         border: "2px solid #c0c0c0",
         flexShrink: 0,
@@ -131,23 +138,29 @@ function PlaceholderFrame({ photoColor }: { photoColor: string }) {
             no photos yet
           </span>
         </div>
-        <div
-          aria-hidden="true"
-          style={{
-            width: "16px",
-            backgroundColor: "#d4d0c8",
-            borderLeft: "1px solid #808080",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "space-between",
-            padding: "1px 0",
-          }}
-        >
-          <div style={{ width: 14, height: 14, backgroundColor: "#c0c0c0", border: "1px solid #808080", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "8px" }}>▲</div>
-          <div style={{ width: 14, height: 14, backgroundColor: "#c0c0c0", border: "1px solid #808080", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "8px" }}>▼</div>
-        </div>
+        <DecorativeScrollbar />
       </div>
+    </div>
+  );
+}
+
+function DecorativeScrollbar() {
+  return (
+    <div
+      aria-hidden="true"
+      style={{
+        width: "16px",
+        backgroundColor: "#d4d0c8",
+        borderLeft: "1px solid #808080",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-between",
+        padding: "1px 0",
+      }}
+    >
+      <div style={{ width: 14, height: 14, backgroundColor: "#c0c0c0", border: "1px solid #808080", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "8px" }}>▲</div>
+      <div style={{ width: 14, height: 14, backgroundColor: "#c0c0c0", border: "1px solid #808080", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "8px" }}>▼</div>
     </div>
   );
 }
