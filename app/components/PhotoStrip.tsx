@@ -29,7 +29,7 @@ export default function PhotoStrip({ photos, photoColor, accentColor }: PhotoStr
 
   return (
     <>
-      <div style={{ display: "flex", alignItems: "flex-end", gap: "12px", overflowX: "auto", paddingBottom: "8px" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", gap: "12px", paddingBottom: "8px" }}>
         {photos.length === 0 ? (
           <PlaceholderFrame photoColor={photoColor} />
         ) : (
