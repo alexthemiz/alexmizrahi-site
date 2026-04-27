@@ -38,7 +38,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
         <div style={{ width: 10, height: 10, backgroundColor: "#28c840", border: "1px solid rgba(0,0,0,0.3)", flexShrink: 0 }} />
         <span
           style={{
-            fontFamily: "monospace",
+            fontFamily: "var(--font-vt323), monospace",
             fontSize: "10px",
             color: "#ffffff",
             marginLeft: "4px",
@@ -79,6 +79,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
           {`C:\\photos\\${filename}`}
         </span>
         <button
+          type="button"
           style={{
             fontSize: "9px",
             fontFamily: "monospace",
@@ -98,7 +99,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
       <div style={{ display: "flex" }}>
         <img
           src={encodedSrc}
-          alt={photo.caption ?? filename}
+          alt={photo.caption ?? ""}
           style={{
             width: "200px",
             height: "160px",
@@ -108,6 +109,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
         />
         {/* Scrollbar */}
         <div
+          aria-hidden="true"
           style={{
             width: "16px",
             backgroundColor: "#d4d0c8",
