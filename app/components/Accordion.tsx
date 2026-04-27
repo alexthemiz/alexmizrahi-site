@@ -98,7 +98,11 @@ export default function Accordion() {
                   {section.description}
                 </p>
 
-                <PhotoStrip photoColor={section.photoColor} />
+                <PhotoStrip
+                  photos={section.photos}
+                  photoColor={section.photoColor}
+                  accentColor={section.accentColor}
+                />
 
                 {section.tag && (
                   <div
