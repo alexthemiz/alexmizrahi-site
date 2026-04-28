@@ -4,6 +4,13 @@ import { useState } from "react";
 import { SECTIONS } from "../data/sections";
 import PhotoStrip from "./PhotoStrip";
 
+function darken(hex: string, amount = 15): string {
+  const r = Math.max(0, parseInt(hex.slice(1, 3), 16) - amount);
+  const g = Math.max(0, parseInt(hex.slice(3, 5), 16) - amount);
+  const b = Math.max(0, parseInt(hex.slice(5, 7), 16) - amount);
+  return `#${r.toString(16).padStart(2, "0")}${g.toString(16).padStart(2, "0")}${b.toString(16).padStart(2, "0")}`;
+}
+
 export default function Accordion() {
   const [openId, setOpenId] = useState<string | null>(null);
   const [openSubId, setOpenSubId] = useState<string | null>(null);
@@ -134,7 +141,11 @@ export default function Accordion() {
                           key={sub.id}
                           style={{
                             border: "1px dashed #c0c0c0",
-                            backgroundColor: "#000040",
+                            backgroundColor: section.subClosedColor
+                              ? isSubOpen
+                                ? darken(section.subClosedColor)
+                                : section.subClosedColor
+                              : "#000040",
                             marginBottom: "4px",
                           }}
                         >

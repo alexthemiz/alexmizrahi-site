@@ -22,6 +22,7 @@ export type Section = {
   photoColor: string;
   accentColor: string;
   photos: Photo[];
+  subClosedColor?: string;
   subSections?: SubSection[];
 };
 
@@ -38,6 +39,7 @@ export const SECTIONS: Section[] = [
     openColor: "#ffe5cc",
     photoColor: "#f5c9a0",
     accentColor: "#b06000",
+    subClosedColor: "#e8c4a0",
     photos: [
       { src: '/images/smores-lab/Aestival1.png' },
       { src: '/images/smores-lab/CAMP Smore1.png' },
@@ -88,6 +90,7 @@ export const SECTIONS: Section[] = [
     openColor: "#fffacc",
     photoColor: "#f5ef9a",
     accentColor: "#8a7000",
+    subClosedColor: "#e8e0a0",
     photos: [
       { src: '/images/activations/Bunnyhana.png' },
       { src: '/images/activations/IMG_6140 zoomed in.jpg' },
@@ -162,6 +165,7 @@ export const SECTIONS: Section[] = [
     openColor: "#cce8ff",
     photoColor: "#9acef5",
     accentColor: "#1a5a9a",
+    subClosedColor: "#a0c4e8",
     photos: [
       { src: '/images/communications/bluestate.avif' },
       { src: '/images/communications/osf_logo.png' },
@@ -202,6 +206,7 @@ export const SECTIONS: Section[] = [
     openColor: "#e8ccff",
     photoColor: "#d09af5",
     accentColor: "#6a1a9a",
+    subClosedColor: "#c8a0e8",
     photos: [
       { src: '/images/copywriting/chase_ultimate_rewards.jpg' },
       { src: '/images/copywriting/mercedes-benz-logo-11521539785ghkyjiijih.png' },
