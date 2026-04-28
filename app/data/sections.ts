@@ -1,5 +1,15 @@
 export type Photo = { src: string; caption?: string };
 
+export type SubSection = {
+  id: string;
+  title: string;
+  description: string;
+  photos: Photo[];
+  photoColor: string;
+  accentColor: string;
+  tag?: string;
+};
+
 export type Section = {
   id: string;
   number: string;
@@ -8,10 +18,11 @@ export type Section = {
   url?: string;
   description: string;
   tag?: string;
-  openColor: string; // background when open
-  photoColor: string;   // background for photo placeholder boxes
-  accentColor: string;  // eyebrow text + CTA tag border/text color
+  openColor: string;
+  photoColor: string;
+  accentColor: string;
   photos: Photo[];
+  subSections?: SubSection[];
 };
 
 export const SECTIONS: Section[] = [
@@ -38,6 +49,32 @@ export const SECTIONS: Section[] = [
       { src: '/images/smores-lab/enchanted_smorest2.JPG' },
       { src: '/images/smores-lab/smorgue1.jpg' },
       { src: '/images/smores-lab/smorgue2.JPG' },
+    ],
+    subSections: [
+      {
+        id: "smores-corporate",
+        title: "Corporate Events",
+        description: "",
+        photos: [],
+        photoColor: "#e8b07a",
+        accentColor: "#b06000",
+      },
+      {
+        id: "smores-festivals",
+        title: "Festivals & Cultural",
+        description: "",
+        photos: [],
+        photoColor: "#e8b07a",
+        accentColor: "#b06000",
+      },
+      {
+        id: "smores-private",
+        title: "Private Celebrations",
+        description: "",
+        photos: [],
+        photoColor: "#e8b07a",
+        accentColor: "#b06000",
+      },
     ],
   },
   {
@@ -74,6 +111,32 @@ export const SECTIONS: Section[] = [
       { src: '/images/activations/wimbleden5.jpg' },
       { src: '/images/activations/wristlemania 2.png' },
     ],
+    subSections: [
+      {
+        id: "activations-lolla",
+        title: "Lollakazooza",
+        description: "",
+        photos: [],
+        photoColor: "#e8d870",
+        accentColor: "#8a7000",
+      },
+      {
+        id: "activations-oneoffs",
+        title: "One-Offs",
+        description: "",
+        photos: [],
+        photoColor: "#e8d870",
+        accentColor: "#8a7000",
+      },
+      {
+        id: "activations-weddings",
+        title: "Weddings & Private",
+        description: "",
+        photos: [],
+        photoColor: "#e8d870",
+        accentColor: "#8a7000",
+      },
+    ],
   },
   {
     id: "tpp",
@@ -103,6 +166,32 @@ export const SECTIONS: Section[] = [
       { src: '/images/communications/bluestate.avif' },
       { src: '/images/communications/osf_logo.png' },
     ],
+    subSections: [
+      {
+        id: "comms-osf",
+        title: "Open Society Foundations",
+        description: "",
+        photos: [],
+        photoColor: "#78b5e8",
+        accentColor: "#1a5a9a",
+      },
+      {
+        id: "comms-assemblage",
+        title: "The Assemblage",
+        description: "",
+        photos: [],
+        photoColor: "#78b5e8",
+        accentColor: "#1a5a9a",
+      },
+      {
+        id: "comms-bluestate",
+        title: "Blue State Digital",
+        description: "",
+        photos: [],
+        photoColor: "#78b5e8",
+        accentColor: "#1a5a9a",
+      },
+    ],
   },
   {
     id: "copywriting",
@@ -116,6 +205,24 @@ export const SECTIONS: Section[] = [
     photos: [
       { src: '/images/copywriting/chase_ultimate_rewards.jpg' },
       { src: '/images/copywriting/mercedes-benz-logo-11521539785ghkyjiijih.png' },
+    ],
+    subSections: [
+      {
+        id: "copy-sapient",
+        title: "SapientRazorfish",
+        description: "",
+        photos: [],
+        photoColor: "#b878e8",
+        accentColor: "#6a1a9a",
+      },
+      {
+        id: "copy-roar",
+        title: "ROAR Groupe",
+        description: "",
+        photos: [],
+        photoColor: "#b878e8",
+        accentColor: "#6a1a9a",
+      },
     ],
   },
 ];

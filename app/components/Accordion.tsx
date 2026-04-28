@@ -6,9 +6,16 @@ import PhotoStrip from "./PhotoStrip";
 
 export default function Accordion() {
   const [openId, setOpenId] = useState<string | null>(null);
+  const [openSubId, setOpenSubId] = useState<string | null>(null);
 
   const toggle = (id: string) => {
-    setOpenId((prev) => (prev === id ? null : id));
+    setOpenId((prev) => {
+      if (prev === id) {
+        setOpenSubId(null);
+        return null;
+      }
+      return id;
+    });
   };
 
   return (
@@ -23,7 +30,7 @@ export default function Accordion() {
             className={isActivations && isOpen ? "kazoo-cursor" : ""}
             style={{
               border: "1px solid #c0c0c0",
-              backgroundColor: "#000080",
+              backgroundColor: "#000040",
               marginBottom: "4px",
             }}
           >
@@ -114,6 +121,89 @@ export default function Accordion() {
                     }}
                   >
                     {section.tag}
+                  </div>
+                )}
+
+                {/* Sub-accordions */}
+                {section.subSections && section.subSections.length > 0 && (
+                  <div style={{ marginTop: "20px" }}>
+                    {section.subSections.map((sub) => {
+                      const isSubOpen = openSubId === sub.id;
+                      return (
+                        <div
+                          key={sub.id}
+                          style={{
+                            border: "1px dashed #c0c0c0",
+                            backgroundColor: "#000040",
+                            marginBottom: "4px",
+                          }}
+                        >
+                          <button
+                            onClick={() => setOpenSubId(isSubOpen ? null : sub.id)}
+                            className="w-full text-left py-3 flex items-center justify-between gap-4"
+                            style={{
+                              backgroundColor: "transparent",
+                              paddingLeft: "32px",
+                              paddingRight: "16px",
+                            }}
+                          >
+                            <span
+                              className="font-vt323"
+                              style={{
+                                fontSize: "22px",
+                                color: isSubOpen ? "#e8c84a" : "#c0c0e0",
+                              }}
+                            >
+                              {sub.title}
+                            </span>
+                            <span
+                              className="font-vt323 shrink-0"
+                              style={{ fontSize: "16px", color: isSubOpen ? "#e8c84a" : "#c0c0e0" }}
+                            >
+                              {isSubOpen ? "▼" : "►"}
+                            </span>
+                          </button>
+
+                          {isSubOpen && (
+                            <div
+                              style={{
+                                backgroundColor: section.openColor,
+                                paddingTop: "16px",
+                                paddingBottom: "16px",
+                                paddingLeft: "32px",
+                                paddingRight: "16px",
+                              }}
+                            >
+                              {sub.description && (
+                                <p
+                                  className="font-vt323 mb-4 leading-relaxed whitespace-pre-line"
+                                  style={{ fontSize: "18px", color: "#1a1a2e" }}
+                                >
+                                  {sub.description}
+                                </p>
+                              )}
+                              <PhotoStrip
+                                photos={sub.photos}
+                                photoColor={sub.photoColor}
+                                accentColor={sub.accentColor}
+                              />
+                              {sub.tag && (
+                                <div
+                                  className="font-vt323 mt-4 inline-block px-3 py-1"
+                                  style={{
+                                    fontSize: "18px",
+                                    color: sub.accentColor,
+                                    border: `1px solid ${sub.accentColor}`,
+                                  }}
+                                >
+                                  {sub.tag}
+                                </div>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
               </div>
