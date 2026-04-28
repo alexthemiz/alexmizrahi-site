@@ -162,7 +162,7 @@ export default function Accordion() {
                               className="font-vt323"
                               style={{
                                 fontSize: "22px",
-                                color: isSubOpen ? "#e8c84a" : "#c0c0e0",
+                                color: isSubOpen ? "#000040" : "#000060",
                               }}
                             >
                               {sub.title}
