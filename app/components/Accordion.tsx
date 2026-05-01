@@ -52,14 +52,14 @@ export default function Accordion() {
                 <span
                   className="font-pixel"
                   aria-hidden="true"
-                  style={{ fontSize: "8px", color: "#4a4a7a" }}
+                  style={{ fontSize: "10px", color: "#4a4a7a" }}
                 >
                   {section.number}
                 </span>
                 <span
                   className="font-vt323"
                   style={{
-                    fontSize: "28px",
+                    fontSize: "34px",
                     color: isOpen ? "#e8c84a" : "#c0c0e0",
                     lineHeight: 1.1,
                   }}
@@ -68,7 +68,7 @@ export default function Accordion() {
                   {section.meta && (
                     <span
                       className="font-vt323 ml-3"
-                      style={{ fontSize: "18px", opacity: 0.6 }}
+                      style={{ fontSize: "22px", opacity: 0.6 }}
                     >
                       {`// ${section.meta}`}
                     </span>
@@ -76,7 +76,7 @@ export default function Accordion() {
                   {section.url && (
                     <span
                       className="font-vt323 ml-2"
-                      style={{ fontSize: "18px", opacity: 0.6 }}
+                      style={{ fontSize: "22px", opacity: 0.6 }}
                     >
                       {`// ${section.url}`}
                     </span>
@@ -85,7 +85,7 @@ export default function Accordion() {
               </div>
               <span
                 className="font-vt323 shrink-0"
-                style={{ fontSize: "20px", color: isOpen ? "#e8c84a" : "#c0c0e0" }}
+                style={{ fontSize: "24px", color: isOpen ? "#e8c84a" : "#c0c0e0" }}
               >
                 {isOpen ? "▼" : "►"}
               </span>
@@ -97,17 +97,9 @@ export default function Accordion() {
                 className="py-6 px-4"
                 style={{ backgroundColor: section.openColor }}
               >
-                {section.meta && (
-                  <p
-                    className="font-vt323 mb-2"
-                    style={{ fontSize: "18px", color: section.accentColor }}
-                  >
-                    {section.meta}
-                  </p>
-                )}
                 <p
                   className="font-vt323 mb-6 leading-relaxed whitespace-pre-line"
-                  style={{ fontSize: "20px", color: "#1a1a2e" }}
+                  style={{ fontSize: "24px", color: "#1a1a2e" }}
                 >
                   {section.description}
                 </p>
@@ -122,7 +114,7 @@ export default function Accordion() {
                   <div
                     className="font-vt323 mt-6 inline-block px-3 py-1"
                     style={{
-                      fontSize: "20px",
+                      fontSize: "24px",
                       color: section.accentColor,
                       border: `1px solid ${section.accentColor}`,
                     }}
@@ -161,7 +153,7 @@ export default function Accordion() {
                             <span
                               className="font-vt323"
                               style={{
-                                fontSize: "22px",
+                                fontSize: "26px",
                                 color: isSubOpen ? "#000040" : "#000060",
                               }}
                             >
@@ -169,7 +161,7 @@ export default function Accordion() {
                             </span>
                             <span
                               className="font-vt323 shrink-0"
-                              style={{ fontSize: "16px", color: isSubOpen ? "#e8c84a" : "#c0c0e0" }}
+                              style={{ fontSize: "20px", color: isSubOpen ? "#000040" : "#000060" }}
                             >
                               {isSubOpen ? "▼" : "►"}
                             </span>
@@ -188,7 +180,7 @@ export default function Accordion() {
                               {sub.description && (
                                 <p
                                   className="font-vt323 mb-4 leading-relaxed whitespace-pre-line"
-                                  style={{ fontSize: "18px", color: "#1a1a2e" }}
+                                  style={{ fontSize: "22px", color: "#1a1a2e" }}
                                 >
                                   {sub.description}
                                 </p>
@@ -202,7 +194,7 @@ export default function Accordion() {
                                 <div
                                   className="font-vt323 mt-4 inline-block px-3 py-1"
                                   style={{
-                                    fontSize: "18px",
+                                    fontSize: "22px",
                                     color: sub.accentColor,
                                     border: `1px solid ${sub.accentColor}`,
                                   }}
