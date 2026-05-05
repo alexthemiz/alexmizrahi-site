@@ -5,13 +5,14 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
-    const { name, visitingFrom, message } = await req.json();
+    const { name, email, visitingFrom, message } = await req.json();
 
     await resend.emails.send({
       from: "onboarding@resend.dev",
       to: "alexmiz@gmail.com",
-      subject: `Guestbook: ${name}`,
-      text: `Name: ${name}\nVisiting from: ${visitingFrom}\n\nMessage:\n${message}`,
+      replyTo: email || undefined,
+      subject: `Guestbook message from ${name}`,
+      text: `Name: ${name}\nEmail: ${email || "(not provided)"}\nVisiting from: ${visitingFrom || "(not provided)"}\n\nMessage:\n${message}`,
     });
 
     return NextResponse.json({ ok: true });

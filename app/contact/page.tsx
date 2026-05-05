@@ -36,12 +36,26 @@ export default function ContactPage() {
 
         {/* Contact info */}
         <div
-          className="font-vt323 mb-8"
-          style={{ fontSize: "22px", color: "#e8c84a", lineHeight: 1.6 }}
+          className="font-vt323 mb-8 flex flex-wrap items-center gap-x-3"
+          style={{ fontSize: "22px", color: "#e8c84a" }}
         >
-          <div>alexmiz@gmail.com</div>
-          <div>linkedin.com/in/alexmizrahi</div>
-          <div>Brooklyn / Los Angeles</div>
+          <a
+            href="mailto:hello@alexmizrahi.com"
+            style={{ color: "#e8c84a", textDecoration: "underline", fontFamily: "var(--font-vt323), monospace" }}
+          >
+            hello@alexmizrahi.com
+          </a>
+          <span aria-hidden="true">|</span>
+          <a
+            href="https://linkedin.com/in/alexmizrahi"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#e8c84a", textDecoration: "underline", fontFamily: "var(--font-vt323), monospace" }}
+          >
+            linkedin.com/in/alexmizrahi
+          </a>
+          <span aria-hidden="true">|</span>
+          <span>Brooklyn, NY / Los Angeles, CA</span>
         </div>
 
         {/* Rainbow divider */}

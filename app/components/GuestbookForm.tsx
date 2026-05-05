@@ -26,6 +26,7 @@ const labelStyle: React.CSSProperties = {
 
 export default function GuestbookForm() {
   const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [visitingFrom, setVisitingFrom] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<Status>("idle");
@@ -37,7 +38,7 @@ export default function GuestbookForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, visitingFrom, message }),
+        body: JSON.stringify({ name, email, visitingFrom, message }),
       });
       setStatus(res.ok ? "success" : "error");
     } catch {
@@ -68,6 +69,16 @@ export default function GuestbookForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
+          style={inputStyle}
+        />
+      </div>
+
+      <div>
+        <label style={labelStyle}>Email</label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           style={inputStyle}
         />
       </div>
