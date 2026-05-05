@@ -13,9 +13,6 @@ export default function Home() {
     <main className="min-h-screen" style={{ backgroundColor: "#000080" }}>
       <Header />
 
-      {/* Rainbow divider */}
-      <div style={RAINBOW_STYLE} />
-
       {/* Visitor counter line */}
       <p
         className="font-vt323 text-center py-2"

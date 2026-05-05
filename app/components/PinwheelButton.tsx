@@ -70,7 +70,7 @@ export default function PinwheelButton() {
         <span
           style={{
             fontFamily: "var(--font-vt323), monospace",
-            fontSize: "13px",
+            fontSize: "16px",
             color: "#e8c84a",
             lineHeight: 1,
           }}
