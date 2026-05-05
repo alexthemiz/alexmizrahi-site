@@ -40,7 +40,9 @@ export default function ContactPage() {
           style={{ fontSize: "22px", color: "#e8c84a" }}
         >
           <a
-            href="mailto:alexmiz@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&to=alexmiz@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{ color: "#e8c84a", textDecoration: "underline", fontFamily: "var(--font-vt323), monospace" }}
           >
             Email Me
