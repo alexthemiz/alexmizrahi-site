@@ -18,7 +18,7 @@ export default function About() {
     <main className="min-h-screen" style={{ backgroundColor: "#000080" }}>
       <Header />
 
-      <div className="max-w-[900px] mx-auto px-6 py-12">
+      <div className="site-width px-6 py-12">
         <h1
           className="font-pixel text-center mb-6"
           style={{ fontSize: "24px", color: "#ffff00", textShadow: "2px 2px #ff0000" }}
