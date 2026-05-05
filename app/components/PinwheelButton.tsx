@@ -84,7 +84,7 @@ export default function PinwheelButton() {
           style={{
             position: "absolute",
             bottom: "calc(100% + 8px)",
-            right: 0,
+            left: 0,
             backgroundColor: "#ffff00",
             border: "2px solid #000000",
             width: "427px",

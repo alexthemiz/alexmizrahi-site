@@ -9,7 +9,7 @@ const RAINBOW_STYLE = {
 export default function Header() {
   return (
     <header className="pt-10 pb-0 text-center">
-      <div className="px-6 max-w-4xl mx-auto pb-6">
+      <div className="px-6 max-w-4xl mx-auto pb-10">
         {/* Name */}
         <Link href="/" style={{ textDecoration: "none" }}>
           <h1
