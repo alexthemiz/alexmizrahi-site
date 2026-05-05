@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PinwheelButton from "./PinwheelButton";
 
 export default function Header() {
   return (
@@ -50,13 +51,7 @@ export default function Header() {
             contact
           </a>
         </div>
-        <a
-          href="mailto:alexmiz@gmail.com"
-          className="font-vt323 text-xl hover:opacity-75 transition-opacity"
-          style={{ color: "#ffff00" }}
-        >
-          ** hire me **
-        </a>
+        <PinwheelButton />
       </nav>
     </header>
   );
