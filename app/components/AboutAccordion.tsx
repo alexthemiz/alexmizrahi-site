@@ -10,7 +10,7 @@ function darken(hex: string, amount = 15): string {
 }
 
 const LINK: React.CSSProperties = {
-  color: "#e8c84a",
+  color: "#00ffff",
   textDecoration: "underline",
   fontFamily: "var(--font-vt323), monospace",
 };
