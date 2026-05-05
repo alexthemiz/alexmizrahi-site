@@ -87,7 +87,7 @@ export default function PinwheelButton() {
             right: 0,
             backgroundColor: "#ffff00",
             border: "2px solid #000000",
-            width: "640px",
+            width: "427px",
             maxWidth: "90vw",
             padding: "12px 16px",
             zIndex: 100,
