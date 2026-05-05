@@ -34,7 +34,7 @@ export default function Footer() {
         {/* Right: kazoo */}
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
           <KazooButton />
-          <span style={LABEL_STYLE}>Click for kazoo</span>
+          <span style={LABEL_STYLE}>Click for chicken.</span>
         </div>
       </div>
 
