@@ -26,7 +26,7 @@ export default function Header() {
 
         {/* Tagline */}
         <p
-          className="font-vt323 mb-6"
+          className="font-vt323 mb-4"
           style={{ fontSize: "22px", color: "#00ff00" }}
         >
           Experiential producer. Communications strategist. Ideas man.
