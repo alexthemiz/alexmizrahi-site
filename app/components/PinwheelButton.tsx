@@ -83,34 +83,66 @@ export default function PinwheelButton() {
         <div
           style={{
             position: "absolute",
-            bottom: "calc(100% + 8px)",
+            top: "calc(100% + 8px)",
             right: 0,
-            backgroundColor: "#000040",
-            border: "1px solid #c0c0c0",
+            backgroundColor: "#ffff00",
+            border: "2px solid #000000",
+            maxWidth: "320px",
             padding: "12px 16px",
-            minWidth: "240px",
-            maxWidth: "340px",
             zIndex: 100,
           }}
         >
-          <p
+          {/* Header bar */}
+          <div
             style={{
-              fontFamily: "var(--font-vt323), monospace",
-              fontSize: "28px",
-              color: "#e8c84a",
-              margin: 0,
-              lineHeight: 1.1,
+              backgroundColor: "#ff0000",
+              padding: "4px 10px",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              margin: "-12px -16px 10px",
             }}
           >
-            {currentPun.pun}
-          </p>
+            <span
+              style={{
+                fontFamily: "var(--font-vt323), monospace",
+                fontSize: "22px",
+                color: "#ffff00",
+                lineHeight: 1,
+              }}
+            >
+              {currentPun.pun}
+            </span>
+            <button
+              onClick={() => setCurrentPun(null)}
+              style={{
+                fontFamily: "var(--font-vt323), monospace",
+                fontSize: "20px",
+                color: "#ffff00",
+                background: "none",
+                border: "1px solid #ffff00",
+                cursor: "pointer",
+                padding: "0 5px",
+                lineHeight: 1,
+                flexShrink: 0,
+                marginLeft: "8px",
+              }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.backgroundColor = "#cc0000"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.backgroundColor = "transparent"; }}
+              aria-label="Close pun"
+            >
+              X
+            </button>
+          </div>
+          {/* Definition */}
           <p
             style={{
               fontFamily: "var(--font-vt323), monospace",
-              fontSize: "20px",
-              color: "#ffffff",
-              margin: "6px 0 0",
-              lineHeight: 1.3,
+              fontSize: "17px",
+              color: "#000000",
+              margin: 0,
+              lineHeight: 1.4,
+              textAlign: "left",
             }}
           >
             {currentPun.definition}
