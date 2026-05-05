@@ -15,11 +15,6 @@ export default function Home() {
 
       <Accordion />
 
-      {/* Rainbow divider */}
-      <div className="max-w-4xl mx-auto px-6">
-        <div style={RAINBOW_STYLE} />
-      </div>
-
       <Footer />
     </main>
   );

@@ -18,7 +18,6 @@ export default function Footer() {
   return (
     <footer className="max-w-4xl mx-auto" style={{ backgroundColor: "#000080" }}>
       <div style={RAINBOW_STYLE} />
-      <div style={{ height: "2px", backgroundColor: "#c0c0c0" }} />
 
       <div className="px-6 py-6 flex items-center justify-between">
         {/* Left: pinwheel */}
