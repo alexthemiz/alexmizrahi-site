@@ -16,7 +16,7 @@ const LABEL_STYLE: React.CSSProperties = {
 
 export default function Footer() {
   return (
-    <footer className="max-w-4xl mx-auto" style={{ backgroundColor: "#000080" }}>
+    <footer className="max-w-[900px] mx-auto" style={{ backgroundColor: "#000080" }}>
       <div style={RAINBOW_STYLE} />
 
       <div className="px-6 py-6 flex items-center justify-between">

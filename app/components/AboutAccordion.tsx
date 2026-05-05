@@ -153,7 +153,7 @@ export default function AboutAccordion() {
   const communityOpen = openId === "community";
 
   return (
-    <div className="max-w-4xl mx-auto px-6 pb-16 flex flex-col gap-0">
+    <div className="max-w-[900px] mx-auto px-6 pb-16 flex flex-col gap-0">
 
       {/* Writings & Press */}
       <div style={{ border: "1px solid #c0c0c0", backgroundColor: "#000040", marginBottom: "4px" }}>

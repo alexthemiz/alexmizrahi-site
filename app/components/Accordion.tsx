@@ -26,7 +26,7 @@ export default function Accordion() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16 flex flex-col gap-0">
+    <div className="max-w-[900px] mx-auto px-6 py-16 flex flex-col gap-0">
       {SECTIONS.map((section) => {
         const isOpen = openId === section.id;
         const isActivations = section.id === "activations";
