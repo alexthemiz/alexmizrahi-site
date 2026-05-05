@@ -1,5 +1,4 @@
 import Link from "next/link";
-import PinwheelButton from "./PinwheelButton";
 
 const RAINBOW_STYLE = {
   height: "4px",
@@ -11,39 +10,30 @@ export default function Header() {
   return (
     <header className="pt-10 pb-0 text-center">
       <div className="px-6 max-w-4xl mx-auto pb-6">
-      {/* Name */}
-      <Link href="/" style={{ textDecoration: "none" }}>
-        <h1
-          className="font-pixel mb-4"
-          style={{
-            fontSize: "24px",
-            color: "#ffff00",
-            textShadow: "2px 2px #ff0000",
-          }}
+        {/* Name */}
+        <Link href="/" style={{ textDecoration: "none" }}>
+          <h1
+            className="font-pixel mb-4"
+            style={{
+              fontSize: "24px",
+              color: "#ffff00",
+              textShadow: "2px 2px #ff0000",
+            }}
+          >
+            ALEX MIZRAHI
+          </h1>
+        </Link>
+
+        {/* Tagline */}
+        <p
+          className="font-vt323 mb-6"
+          style={{ fontSize: "22px", color: "#00ff00" }}
         >
-          ALEX MIZRAHI
-        </h1>
-      </Link>
+          Experiential producer. Communications strategist. Ideas man.
+        </p>
 
-      {/* Tagline */}
-      <p
-        className="font-vt323 mb-3"
-        style={{ fontSize: "22px", color: "#00ff00" }}
-      >
-        Experiential producer. Communications strategist. Ideas man.
-      </p>
-
-      {/* Blinking availability */}
-      <p
-        className="font-vt323 blink mb-8"
-        style={{ fontSize: "20px", color: "#ffffff" }}
-      >
-        ▌ available for work ▌
-      </p>
-
-      {/* Nav */}
-      <nav className="flex items-center justify-between">
-        <div className="flex gap-4">
+        {/* Nav */}
+        <nav className="flex items-center justify-center gap-4">
           <Link
             href="/about"
             className="font-vt323 text-xl hover:opacity-75 transition-opacity"
@@ -59,9 +49,7 @@ export default function Header() {
           >
             contact
           </Link>
-        </div>
-        <PinwheelButton />
-      </nav>
+        </nav>
       </div>
       <div style={RAINBOW_STYLE} />
     </header>

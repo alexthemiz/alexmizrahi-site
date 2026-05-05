@@ -13,14 +13,6 @@ export default function Home() {
     <main className="min-h-screen" style={{ backgroundColor: "#000080" }}>
       <Header />
 
-      {/* Visitor counter line */}
-      <p
-        className="font-vt323 text-center py-2"
-        style={{ fontSize: "16px", color: "#666699" }}
-      >
-        [ visitor #000247 ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;best viewed in netscape navigator 4.0
-      </p>
-
       <Accordion />
 
       {/* Rainbow divider */}

@@ -70,12 +70,12 @@ export default function PinwheelButton() {
         <span
           style={{
             fontFamily: "var(--font-vt323), monospace",
-            fontSize: "16px",
+            fontSize: "18px",
             color: "#e8c84a",
             lineHeight: 1,
           }}
         >
-          Spun for a pun.
+          Spun for a pun
         </span>
       </button>
 
@@ -83,7 +83,7 @@ export default function PinwheelButton() {
         <div
           style={{
             position: "absolute",
-            top: "calc(100% + 8px)",
+            bottom: "calc(100% + 8px)",
             right: 0,
             backgroundColor: "#ffff00",
             border: "2px solid #000000",
