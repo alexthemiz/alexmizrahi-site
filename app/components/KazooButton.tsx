@@ -2,7 +2,7 @@
 
 export default function KazooButton() {
   const playChicken = () => {
-    const audio = new Audio("/sounds/rubberchicken.wav");
+    const audio = new Audio("/sounds/rubberchicken.mp3");
     audio.play();
   };
 
