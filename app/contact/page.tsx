@@ -36,14 +36,14 @@ export default function ContactPage() {
 
         {/* Contact info */}
         <div
-          className="font-vt323 mb-8 flex flex-wrap items-center gap-x-3"
+          className="font-vt323 mb-8 flex flex-wrap items-center justify-center gap-x-3"
           style={{ fontSize: "22px", color: "#e8c84a" }}
         >
           <a
-            href="mailto:hello@alexmizrahi.com"
+            href="mailto:alexmiz@gmail.com"
             style={{ color: "#e8c84a", textDecoration: "underline", fontFamily: "var(--font-vt323), monospace" }}
           >
-            hello@alexmizrahi.com
+            Email Me
           </a>
           <span aria-hidden="true">|</span>
           <a
@@ -52,7 +52,7 @@ export default function ContactPage() {
             rel="noopener noreferrer"
             style={{ color: "#e8c84a", textDecoration: "underline", fontFamily: "var(--font-vt323), monospace" }}
           >
-            linkedin.com/in/alexmizrahi
+            LinkedIn
           </a>
           <span aria-hidden="true">|</span>
           <span>Brooklyn, NY / Los Angeles, CA</span>
