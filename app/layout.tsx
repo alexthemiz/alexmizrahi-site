@@ -17,9 +17,6 @@ const pressStart2P = Press_Start_2P({
 export const metadata: Metadata = {
   title: "Alex Mizrahi",
   description: "Experiential producer. Communications strategist. Ideas man.",
-  icons: {
-    icon: "/favicon.png",
-  },
 };
 
 export default function RootLayout({
