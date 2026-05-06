@@ -12,8 +12,19 @@ export default function Home() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: "#000080" }}>
       <Header />
+      <div style={RAINBOW_STYLE} />
 
-      <Accordion />
+      <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+        <Accordion />
+      </div>
+
+      <div style={RAINBOW_STYLE} />
+      <p
+        className="font-vt323 text-center py-3"
+        style={{ fontSize: "16px", color: "#666699" }}
+      >
+        [ visitor #000247 ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;best viewed in netscape navigator 4.0
+      </p>
 
       <Footer />
     </main>
