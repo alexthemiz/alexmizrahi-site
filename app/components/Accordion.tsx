@@ -26,7 +26,7 @@ export default function Accordion() {
   };
 
   return (
-    <div className="site-width px-6 py-16 flex flex-col gap-0">
+    <div style={{ maxWidth: "900px", margin: "0 auto", padding: "64px 24px 0" }} className="flex flex-col gap-0">
       {SECTIONS.map((section) => {
         const isOpen = openId === section.id;
         const isActivations = section.id === "activations";
