@@ -44,6 +44,10 @@ export default function Header() {
             contact
           </Link>
         </nav>
+
+        <p className="font-vt323 text-center" style={{ fontSize: "20px", color: "#ffff00", marginTop: "12px" }}>
+          🚧 new site, work in progress 🚧
+        </p>
       </div>
     </header>
   );
