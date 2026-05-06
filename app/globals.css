@@ -26,10 +26,15 @@ body {
   font-family: var(--font-vt323), monospace;
 }
 
-/* Kazoo cursor for Activations section */
+/* Custom cursors for open accordion sections */
+.stick-cursor,
+.stick-cursor * {
+  cursor: url('/images/stick_icon.png') 16 16, auto;
+}
+
 .kazoo-cursor,
 .kazoo-cursor * {
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ctext y='24' font-size='24'%3E🎺%3C/text%3E%3C/svg%3E") 0 0, auto;
+  cursor: url('/images/kazoo_icon.png') 16 16, auto;
 }
 
 /* Site-wide content width constraint */

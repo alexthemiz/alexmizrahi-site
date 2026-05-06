@@ -29,12 +29,14 @@ export default function Accordion() {
     <div className="site-width flex flex-col gap-0" style={{ padding: "0 24px" }}>
       {SECTIONS.map((section) => {
         const isOpen = openId === section.id;
+        const isSmores = section.id === "smores";
         const isActivations = section.id === "activations";
+        const cursorClass = isOpen && isSmores ? "stick-cursor" : isOpen && isActivations ? "kazoo-cursor" : "";
 
         return (
           <div
             key={section.id}
-            className={isActivations && isOpen ? "kazoo-cursor" : ""}
+            className={cursorClass}
             style={{
               border: "1px solid #c0c0c0",
               backgroundColor: "#000040",
