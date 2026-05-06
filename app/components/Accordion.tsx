@@ -26,7 +26,7 @@ export default function Accordion() {
   };
 
   return (
-    <div className="flex flex-col gap-0">
+    <div className="site-width flex flex-col gap-0" style={{ padding: "0 24px" }}>
       {SECTIONS.map((section) => {
         const isOpen = openId === section.id;
         const isActivations = section.id === "activations";
