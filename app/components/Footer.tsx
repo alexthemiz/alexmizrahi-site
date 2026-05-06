@@ -11,7 +11,7 @@ const LABEL_STYLE: React.CSSProperties = {
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: "#000080", borderTop: "2px solid #2e2e5a" }}>
-      <div className="px-6 py-6 flex items-center justify-between" style={{ maxWidth: "750px", margin: "0 auto" }}>
+      <div className="px-6 py-6 flex items-center justify-between" style={{ maxWidth: "860px", margin: "0 auto" }}>
         {/* Left: pinwheel */}
         <PinwheelButton />
 
