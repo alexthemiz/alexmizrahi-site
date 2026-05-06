@@ -29,12 +29,12 @@ body {
 /* Custom cursors for open accordion sections */
 .stick-cursor,
 .stick-cursor * {
-  cursor: url('/images/stick_icon.png') 16 16, auto;
+  cursor: url('/images/stick_cursor.png') 16 16, auto;
 }
 
 .kazoo-cursor,
 .kazoo-cursor * {
-  cursor: url('/images/kazoo_icon.png') 16 16, auto;
+  cursor: url('/images/kazoo_cursor.png') 16 16, auto;
 }
 
 /* Site-wide content width constraint */
