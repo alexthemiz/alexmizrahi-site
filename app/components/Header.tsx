@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="pt-10 pb-0 text-center">
-      <div className="px-6 site-width pb-10">
+    <header className="pt-8 pb-0 text-center">
+      <div className="px-6 site-width pb-8">
         {/* Name */}
         <Link href="/" style={{ textDecoration: "none" }}>
           <h1
             className="font-pixel mb-4"
             style={{
-              fontSize: "24px",
+              fontSize: "20px",
               color: "#ffff00",
               textShadow: "2px 2px #ff0000",
             }}
@@ -21,7 +21,7 @@ export default function Header() {
         {/* Tagline */}
         <p
           className="font-vt323 mb-4"
-          style={{ fontSize: "22px", color: "#00ff00" }}
+          style={{ fontSize: "18px", color: "#00ff00" }}
         >
           Experiential producer. Communications strategist. Ideas man.
         </p>
@@ -31,15 +31,15 @@ export default function Header() {
           <Link
             href="/about"
             className="font-vt323 text-xl hover:opacity-75 transition-opacity"
-            style={{ color: "#00ffff" }}
+            style={{ color: "#00ffff", fontSize: "18px" }}
           >
             about
           </Link>
-          <span className="font-vt323 text-xl" style={{ color: "#00ffff" }} aria-hidden="true">|</span>
+          <span className="font-vt323 text-xl" style={{ color: "#00ffff", fontSize: "18px" }} aria-hidden="true">|</span>
           <Link
             href="/contact"
             className="font-vt323 text-xl hover:opacity-75 transition-opacity"
-            style={{ color: "#00ffff" }}
+            style={{ color: "#00ffff", fontSize: "18px" }}
           >
             contact
           </Link>

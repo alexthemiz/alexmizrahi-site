@@ -3,7 +3,7 @@ import PinwheelButton from "./PinwheelButton";
 
 const LABEL_STYLE: React.CSSProperties = {
   fontFamily: "var(--font-vt323), monospace",
-  fontSize: "18px",
+  fontSize: "15px",
   color: "#e8c84a",
   lineHeight: 1,
 };
@@ -18,7 +18,7 @@ export default function Footer() {
         {/* Center: copyright */}
         <p
           className="font-vt323"
-          style={{ fontSize: "16px", color: "#666699" }}
+          style={{ fontSize: "14px", color: "#666699" }}
         >
           © {new Date().getFullYear()} alex mizrahi. all rights reserved. probably.
         </p>

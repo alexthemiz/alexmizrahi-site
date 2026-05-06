@@ -50,8 +50,8 @@ export default function PinwheelButton() {
         }}
       >
         <svg
-          width="32"
-          height="32"
+          width="28"
+          height="28"
           viewBox="0 0 32 32"
           aria-hidden="true"
           style={{
@@ -70,7 +70,7 @@ export default function PinwheelButton() {
         <span
           style={{
             fontFamily: "var(--font-vt323), monospace",
-            fontSize: "18px",
+            fontSize: "15px",
             color: "#e8c84a",
             lineHeight: 1,
           }}

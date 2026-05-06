@@ -13,7 +13,7 @@ export default function KazooButton() {
       aria-label="Play rubber chicken sound"
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/images/chicken.png" alt="rubber chicken" width={32} height={32} />
+      <img src="/images/chicken.png" alt="rubber chicken" width={28} height={28} />
     </button>
   );
 }
