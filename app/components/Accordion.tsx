@@ -26,7 +26,7 @@ export default function Accordion() {
   };
 
   return (
-    <div>
+    <div className="flex flex-col gap-0">
       {SECTIONS.map((section) => {
         const isOpen = openId === section.id;
         const isActivations = section.id === "activations";
