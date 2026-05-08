@@ -71,6 +71,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
             fontFamily: "monospace",
             color: "#000080",
             flex: 1,
+            minWidth: 0,
             overflow: "hidden",
             whiteSpace: "nowrap",
             textOverflow: "ellipsis",
