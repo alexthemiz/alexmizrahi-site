@@ -159,17 +159,17 @@ export default function AboutAccordion() {
       <div style={{ border: "1px solid #c0c0c0", backgroundColor: "#000040", marginBottom: "4px" }}>
         <button
           onClick={() => toggleMain("writings")}
-          className="w-full text-left py-4 px-4 flex items-center justify-between gap-4"
+          className="w-full text-left py-3 px-4 flex items-center justify-between gap-4"
           style={{ backgroundColor: "transparent" }}
           aria-expanded={writingsOpen}
         >
           <div className="flex flex-col gap-1 flex-1 min-w-0">
-            <span className="font-pixel" aria-hidden="true" style={{ fontSize: "10px", color: "#4a4a7a" }}>01.</span>
-            <span className="font-vt323" style={{ fontSize: "34px", color: writingsOpen ? "#e8c84a" : "#c0c0e0", lineHeight: 1.1 }}>
+            <span className="font-pixel" aria-hidden="true" style={{ fontSize: "8px", color: "#4a4a7a" }}>01.</span>
+            <span className="font-vt323" style={{ fontSize: "28px", color: writingsOpen ? "#e8c84a" : "#c0c0e0", lineHeight: 1.1 }}>
               Writings & Press
             </span>
           </div>
-          <span className="font-vt323 shrink-0" style={{ fontSize: "24px", color: writingsOpen ? "#e8c84a" : "#c0c0e0" }}>
+          <span className="font-vt323 shrink-0" style={{ fontSize: "20px", color: writingsOpen ? "#e8c84a" : "#c0c0e0" }}>
             {writingsOpen ? "▼" : "►"}
           </span>
         </button>
@@ -192,13 +192,13 @@ export default function AboutAccordion() {
                     className="w-full text-left py-3 flex items-center justify-between gap-4"
                     style={{ backgroundColor: "transparent", paddingLeft: "32px", paddingRight: "16px" }}
                   >
-                    <span className="font-vt323" style={{ fontSize: "26px", color: isSubOpen ? "#000040" : "#000060", lineHeight: 1.1 }}>
+                    <span className="font-vt323" style={{ fontSize: "22px", color: isSubOpen ? "#000040" : "#000060", lineHeight: 1.1 }}>
                       {sub.title}
-                      <span style={{ fontSize: "20px", opacity: 0.7, marginLeft: "12px" }}>
+                      <span style={{ fontSize: "18px", opacity: 0.7, marginLeft: "12px" }}>
                         {`// ${sub.meta}`}
                       </span>
                     </span>
-                    <span className="font-vt323 shrink-0" style={{ fontSize: "20px", color: isSubOpen ? "#000040" : "#000060" }}>
+                    <span className="font-vt323 shrink-0" style={{ fontSize: "16px", color: isSubOpen ? "#000040" : "#000060" }}>
                       {isSubOpen ? "▼" : "►"}
                     </span>
                   </button>
@@ -219,20 +219,20 @@ export default function AboutAccordion() {
       <div style={{ border: "1px solid #c0c0c0", backgroundColor: "#000040", marginBottom: "4px" }}>
         <button
           onClick={() => toggleMain("community")}
-          className="w-full text-left py-4 px-4 flex items-center justify-between gap-4"
+          className="w-full text-left py-3 px-4 flex items-center justify-between gap-4"
           style={{ backgroundColor: "transparent" }}
           aria-expanded={communityOpen}
         >
           <div className="flex flex-col gap-1 flex-1 min-w-0">
-            <span className="font-pixel" aria-hidden="true" style={{ fontSize: "10px", color: "#4a4a7a" }}>02.</span>
-            <span className="font-vt323" style={{ fontSize: "34px", color: communityOpen ? "#e8c84a" : "#c0c0e0", lineHeight: 1.1 }}>
+            <span className="font-pixel" aria-hidden="true" style={{ fontSize: "8px", color: "#4a4a7a" }}>02.</span>
+            <span className="font-vt323" style={{ fontSize: "28px", color: communityOpen ? "#e8c84a" : "#c0c0e0", lineHeight: 1.1 }}>
               Community & Service
-              <span className="font-vt323 ml-3" style={{ fontSize: "22px", opacity: 0.6 }}>
+              <span className="font-vt323 ml-3" style={{ fontSize: "18px", opacity: 0.6 }}>
                 {" // giving back // showing up"}
               </span>
             </span>
           </div>
-          <span className="font-vt323 shrink-0" style={{ fontSize: "24px", color: communityOpen ? "#e8c84a" : "#c0c0e0" }}>
+          <span className="font-vt323 shrink-0" style={{ fontSize: "20px", color: communityOpen ? "#e8c84a" : "#c0c0e0" }}>
             {communityOpen ? "▼" : "►"}
           </span>
         </button>

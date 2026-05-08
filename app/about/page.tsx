@@ -34,42 +34,30 @@ export default function About() {
           [bio copy TK]
         </p>
 
-        {/* Photo strip placeholder */}
+        {/* Photos */}
         <div
-          className="mb-10 flex gap-4 flex-wrap"
+          className="mb-10 flex gap-4 flex-wrap justify-center"
           style={{
             borderTop: "1px dashed #666699",
             borderBottom: "1px dashed #666699",
             padding: "20px 0",
           }}
         >
-          {[1, 2, 3].map((i) => (
-            <div
-              key={i}
-              style={{
-                width: "200px",
-                height: "150px",
-                border: "2px solid #666699",
-                backgroundColor: "#000040",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <span className="font-vt323" style={{ color: "#666699", fontSize: "18px" }}>
-                photo {i}
-              </span>
-            </div>
-          ))}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/about/alexmizrahi1.JPG" alt="Alex Mizrahi" style={{ height: "200px", width: "auto", objectFit: "cover" }} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/about/alexmizrahi2.jpg" alt="Alex Mizrahi" style={{ height: "200px", width: "auto", objectFit: "cover" }} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/about/alexmizrahi3.webp" alt="Alex Mizrahi" style={{ height: "200px", width: "auto", objectFit: "cover" }} />
         </div>
 
         {/* Resume buttons */}
         <div className="mb-12 flex gap-4 flex-wrap">
-          <a href="#" style={{ ...BTN_BASE, color: "#ffff00", borderColor: "#ffff00" }}>
-            ► Resume
+          <a href="/resumes/alexmizrahi_events-resume.pdf" target="_blank" rel="noopener noreferrer" style={{ ...BTN_BASE, color: "#ffff00", borderColor: "#ffff00" }}>
+            ► Resume - Experiential
           </a>
-          <a href="#" style={{ ...BTN_BASE, color: "#00ffff", borderColor: "#00ffff" }}>
-            ► One-Pager
+          <a href="/resumes/alexmizrahi_communications-resume.pdf" target="_blank" rel="noopener noreferrer" style={{ ...BTN_BASE, color: "#00ffff", borderColor: "#00ffff" }}>
+            ► Resume - Communications
           </a>
         </div>
       </div>
