@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import { PUNS } from "../data/puns";
 
-type Pun = { pun: string; definition: string };
+type Pun = { pun: string; definition: string; image?: string };
 
 export default function PinwheelButton() {
   const [spinning, setSpinning] = useState(false);
@@ -135,19 +135,28 @@ export default function PinwheelButton() {
               X
             </button>
           </div>
-          {/* Definition */}
-          <p
-            style={{
-              fontFamily: "var(--font-vt323), monospace",
-              fontSize: "17px",
-              color: "#000000",
-              margin: 0,
-              lineHeight: 1.4,
-              textAlign: "left",
-            }}
-          >
-            {currentPun.definition}
-          </p>
+          {/* Definition or image */}
+          {currentPun.image ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={currentPun.image}
+              alt={currentPun.pun}
+              style={{ maxWidth: "200px", height: "auto", display: "block", margin: "0 auto" }}
+            />
+          ) : (
+            <p
+              style={{
+                fontFamily: "var(--font-vt323), monospace",
+                fontSize: "17px",
+                color: "#000000",
+                margin: 0,
+                lineHeight: 1.4,
+                textAlign: "left",
+              }}
+            >
+              {currentPun.definition}
+            </p>
+          )}
         </div>
       )}
     </div>

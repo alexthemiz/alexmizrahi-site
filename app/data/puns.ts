@@ -1,4 +1,4 @@
-export const PUNS: { pun: string; definition: string }[] = [
+export const PUNS: { pun: string; definition: string; image?: string }[] = [
   { pun: "A Diamond in the Roughage", definition: "One delicious ingredient hiding in a mediocre salad" },
   { pun: "A Required Taste", definition: "Malaprop for when you're forced to like something" },
   { pun: "Amy Sconey Barrett", definition: "A Justice on the Breakfast Buffet Court" },
@@ -26,4 +26,5 @@ export const PUNS: { pun: string; definition: string }[] = [
   { pun: "Trebuchaise Lounge", definition: "A comfy sofa you really won't want to be sitting on when they cut the tension cable" },
   { pun: "Tycho Waititi", definition: "Big-time music producer who moonlights as a New Zealand director" },
   { pun: "\"Wake Me Up Before You Go-GURT\"", definition: "Campaign jingle for Go-GURT yogurt, to the tune of \"Wake Me Up Before You Go-Go\"" },
+  { pun: "Horse-Drawn Carriage", definition: "", image: "/images/horsedrawncarriage.png" },
 ];
