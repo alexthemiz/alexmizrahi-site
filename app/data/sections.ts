@@ -153,7 +153,7 @@ export const SECTIONS: Section[] = [
       {
         id: "activations-lolla",
         title: "Lollakazooza",
-        description: "",
+        description: "September 2025: A free kazoo festival located inside a 20' U-Haul truck, featuring stellar performances by attendees on the main stage, as well as a Petting Kazoo, Bekazzooling Station, VIP Clownge, and tootoring throughout the night. The truck was buzzing with energy. Follow @lollakazooza on Instagram for more.",
         photos: [
           { src: '/images/activations/lollakazooza/lollakazooza1.jpg' },
           { src: '/images/activations/lollakazooza/lollakazooza2.jpg' },
@@ -170,36 +170,51 @@ export const SECTIONS: Section[] = [
         photos: [],
         groups: [
           {
-            title: "Group 1",
-            description: LOREM,
+            title: "Bunnyhana",
+            description: "July 2025: A late-night, lagamorph-centric pop-up hibachi restaurant at the Calling All Magical People festival",
             photos: [
               { src: '/images/activations/pop-ups/Bunnyhana.png' },
               { src: '/images/activations/pop-ups/bunnyhana1.jpeg' },
+            ],
+          },
+          {
+            title: "The Decongestion Relief Zone",
+            description: "March 2025: For Shadow Traffic's Competitive Winter Picnicking, I produced the Decongestion Relief Zone: the inverse of Manhattan's Congestion Relief Zone, the DRZ was free to enter but you had to pay to leave; payment came in the form of completing a challenge, after which you were awarded a SNEE-ZPass.",
+            photos: [
               { src: '/images/activations/pop-ups/drz1.jpg' },
               { src: '/images/activations/pop-ups/drz2.jpg' },
               { src: '/images/activations/pop-ups/drz_team.jpg' },
+            ],
+          },
+          {
+            title: "The Pickle Ball",
+            description: "May 2023: As part of Shadow Traffic's Lost Horizon Night Market, I co-produced The Pickle Ball, a pickle-themed gala held in a 26-foot box truck, replete with pickle-carving station, briny beverages, games, and prizes (the prizes were more pickles)",
+            photos: [
               { src: '/images/activations/pop-ups/pickleball1.jpg' },
               { src: '/images/activations/pop-ups/pickleball5.jpg' },
               { src: '/images/activations/pop-ups/pickleball7.jpg' },
+            ],
+          },
+          {
+            title: "Wristlemania",
+            description: LOREM,
+            photos: [
               { src: '/images/activations/pop-ups/wristlemania 2.png' },
             ],
           },
-          { title: "Group 2", description: LOREM, photos: [] },
-          { title: "Group 3", description: LOREM, photos: [] },
-          { title: "Group 4", description: LOREM, photos: [] },
         ],
         photoColor: "#e8d870",
         accentColor: "#8a7000",
       },
       {
         id: "activations-weddings",
-        title: "Weddings & Private",
+        title: "Weddings",
         description: "",
         photos: [],
         groups: [
           {
             title: "Nothing to Hyde Park",
-            description: LOREM,
+            description: "August 2025: I was commissioned by the marrying couple, Charlie and Julia (aka Chulia), to create two activations for their wedding at a country estate outside Caersws, Wales: an icebreaker activity for the first night gathering and a side-room takeover during the big party. Since we were in the UK, I based both activations on UK landmarks. The Icebreaker: Nothing to Hyde Park. Playing off London's Hyde Park and its historic Speakers' Corner, as well as the groom's masterful oratory skills and debate background, I set up a corner space and came up with prompts for participants to ask each other.",
             photos: [
               { src: '/images/activations/weddings/nothingtohydepark.jpg' },
               { src: '/images/activations/weddings/hydepark2.png' },
@@ -207,7 +222,7 @@ export const SECTIONS: Section[] = [
           },
           {
             title: "The WimbleDen",
-            description: LOREM,
+            description: "Being in the homeland of Wimbledon, and knowing that the couple loves pickleball, tennis, and games generally, I converted the space into The WimbleDen, a mini-tennis court where participants could rally, volley, and score without fear of injury or breaking anything (other than serves).",
             photos: [
               { src: '/images/activations/weddings/Wimbleden_sign.gif' },
               { src: '/images/activations/weddings/wimbleden1.jpg' },
@@ -216,7 +231,7 @@ export const SECTIONS: Section[] = [
           },
           {
             title: "Fire Starters",
-            description: LOREM,
+            description: "September 2023: For the destination wedding of Haley and Sol in Ithaca, NY, I was tasked with creating another first-night icebreaker. Building off the couple's love of hot sauce (which they incorporated throughout the celebration), I created Fire Starters, an homage to Hot Ones that had participants attempting spicy conversations while tasting a series of escalatingly spicy sauces.",
             photos: [
               { src: '/images/activations/weddings/firestarters1.jpg' },
               { src: '/images/activations/weddings/firestarters2.jpg' },
