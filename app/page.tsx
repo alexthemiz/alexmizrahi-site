@@ -15,7 +15,7 @@ export default function Home() {
         className="font-vt323 text-center"
         style={{ fontSize: "14px", color: "#666699", padding: "20px 0" }}
       >
-        [ visitor #000247 ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;best viewed in netscape navigator 4.0
+        [ visitor #000247 ] best viewed in netscape navigator 4.0
       </p>
 
       <Footer />

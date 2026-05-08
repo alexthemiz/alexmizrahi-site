@@ -58,18 +58,20 @@ export const SECTIONS: Section[] = [
         photos: [],
         groups: [
           {
-            title: "Group 1",
-            description: LOREM,
+            title: "A Fora S'morealis",
+            description: "December 2025: Fora Travel Holiday Party",
             photos: [
               { src: '/images/smores-lab/corporate-events/Fora_Smorealis1.jpg' },
-              { src: '/images/smores-lab/corporate-events/enchanted_smorest1.JPG' },
-              { src: '/images/smores-lab/corporate-events/enchanted_smorest2.JPG' },
+
             ],
           },
           {
-            title: "Group 2",
-            description: LOREM,
-            photos: [],
+            title: "The S'moreTwenty Station",
+            description: "May 2025: Launch party for new high-end cannabis publication The Other Magazine",
+            photos: [
+                          { src: '/images/smores-lab/corporate-events/enchanted_smorest1.JPG' },
+              { src: '/images/smores-lab/corporate-events/enchanted_smorest2.JPG' },  
+            ],
           },
         ],
         photoColor: "#e8b07a",
@@ -82,24 +84,26 @@ export const SECTIONS: Section[] = [
         photos: [],
         groups: [
           {
-            title: "Group 1",
-            description: LOREM,
+            title: "Aestival Festival",
+            description: "August 2024 in Upstate NY",
             photos: [
               { src: '/images/smores-lab/festivals/Aestival1.png' },
-              { src: '/images/smores-lab/festivals/CAMP Smore1.png' },
-              { src: '/images/smores-lab/festivals/CAMP Smore2.png' },
-              { src: '/images/smores-lab/festivals/NTSH1.png' },
             ],
           },
           {
-            title: "Group 2",
-            description: LOREM,
-            photos: [],
+            title: "Nothing to See Here",
+            description: "July 2024",
+            photos: [
+                            { src: '/images/smores-lab/festivals/NTSH1.png' },
+            ],
           },
           {
-            title: "Group 3",
-            description: LOREM,
-            photos: [],
+            title: "Calling All Magical People",
+            description: "July 2024",
+            photos: [
+                            { src: '/images/smores-lab/festivals/CAMP Smore1.png' },
+              { src: '/images/smores-lab/festivals/CAMP Smore2.png' },
+            ],
           },
         ],
         photoColor: "#e8b07a",
@@ -112,23 +116,20 @@ export const SECTIONS: Section[] = [
         photos: [],
         groups: [
           {
-            title: "Group 1",
-            description: LOREM,
+            title: "The S'morgue and The S'moretuary",
+            description: "October 2024: City of Gods Halloween",
             photos: [
-              { src: '/images/smores-lab/parties/congealism1.png' },
+
               { src: '/images/smores-lab/parties/smorgue1.jpg' },
               { src: '/images/smores-lab/parties/smorgue2.JPG' },
             ],
           },
           {
-            title: "Group 2",
-            description: LOREM,
-            photos: [],
-          },
-          {
-            title: "Group 3",
-            description: LOREM,
-            photos: [],
+            title: "Death to Congealism",
+            description: "September 2024: Death to Realism party",
+            photos: [
+              { src: '/images/smores-lab/parties/congealism1.png' },
+            ],
           },
         ],
         photoColor: "#e8b07a",
