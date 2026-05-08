@@ -74,7 +74,9 @@ export default function About() {
         </div>
       </div>
 
-      <AboutAccordion />
+      <div style={{ maxWidth: "860px", margin: "0 auto" }}>
+        <AboutAccordion />
+      </div>
 
       <Footer />
     </main>
