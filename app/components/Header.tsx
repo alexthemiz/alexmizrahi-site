@@ -1,7 +1,14 @@
 import Link from "next/link";
 
+const RAINBOW_STYLE = {
+  height: "4px",
+  background:
+    "repeating-linear-gradient(90deg, #ff0000 0px, #ff0000 30px, #ff6600 30px, #ff6600 60px, #ffff00 60px, #ffff00 90px, #00cc00 90px, #00cc00 120px, #0066ff 120px, #0066ff 150px, #9900cc 150px, #9900cc 180px)",
+};
+
 export default function Header() {
   return (
+    <>
     <header className="pt-8 pb-0 text-center">
       <div className="px-6 site-width pb-8">
         {/* Name */}
@@ -50,5 +57,7 @@ export default function Header() {
         </p>
       </div>
     </header>
+    <div style={RAINBOW_STYLE} />
+    </>
   );
 }

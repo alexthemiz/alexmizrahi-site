@@ -104,6 +104,14 @@ export default function Accordion() {
                   style={{ fontSize: "20px", color: "#1a1a2e" }}
                 >
                   {section.description}
+                  {section.descriptionSuffix && (
+                    <>{section.descriptionSuffix.prefix ?? " "}<a
+                      href={section.descriptionSuffix.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "#1a1a2e", textDecoration: "underline" }}
+                    >{section.descriptionSuffix.text}</a></>
+                  )}
                 </p>
 
                 <PhotoStrip
@@ -187,11 +195,37 @@ export default function Accordion() {
                                   {sub.description}
                                 </p>
                               )}
-                              <PhotoStrip
-                                photos={sub.photos}
-                                photoColor={sub.photoColor}
-                                accentColor={sub.accentColor}
-                              />
+                              {sub.groups && sub.groups.length > 0 ? (
+                                sub.groups.map((group) => (
+                                  <div key={group.title} style={{ marginBottom: "20px" }}>
+                                    <p
+                                      className="font-vt323"
+                                      style={{ fontSize: "18px", color: "#1a1a2e", fontWeight: "bold", marginBottom: "4px" }}
+                                    >
+                                      {group.title}
+                                    </p>
+                                    {group.description && (
+                                      <p
+                                        className="font-vt323 leading-relaxed whitespace-pre-line"
+                                        style={{ fontSize: "18px", color: "#1a1a2e", marginBottom: "8px" }}
+                                      >
+                                        {group.description}
+                                      </p>
+                                    )}
+                                    <PhotoStrip
+                                      photos={group.photos}
+                                      photoColor={sub.photoColor}
+                                      accentColor={sub.accentColor}
+                                    />
+                                  </div>
+                                ))
+                              ) : (
+                                <PhotoStrip
+                                  photos={sub.photos}
+                                  photoColor={sub.photoColor}
+                                  accentColor={sub.accentColor}
+                                />
+                              )}
                               {sub.tag && (
                                 <div
                                   className="font-vt323 mt-4 inline-block px-3 py-1"

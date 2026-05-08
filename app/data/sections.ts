@@ -1,10 +1,17 @@
 export type Photo = { src: string; caption?: string };
 
+export type PhotoGroup = {
+  title: string;
+  description: string;
+  photos: Photo[];
+};
+
 export type SubSection = {
   id: string;
   title: string;
   description: string;
   photos: Photo[];
+  groups?: PhotoGroup[];
   photoColor: string;
   accentColor: string;
   tag?: string;
@@ -17,6 +24,7 @@ export type Section = {
   meta?: string;
   url?: string;
   description: string;
+  descriptionSuffix?: { prefix?: string; text: string; href: string };
   tag?: string;
   openColor: string;
   photoColor: string;
@@ -26,16 +34,17 @@ export type Section = {
   subSections?: SubSection[];
 };
 
+const LOREM = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+
 export const SECTIONS: Section[] = [
   {
     id: "smores",
     number: "01",
     title: "The S'mores Lab",
     meta: "ongoing project",
-    url: "thesmoreslab.com",
     description:
       "Turned the traditional, humdrum s'mores bar into an interactive culinary and art experience where participants build never-before-s'mored creations from a vast range of ingredients, then give them full fashion-style photoshoots. Equal parts food science, participatory art, and campfire nostalgia.",
-    tag: "make your next event sweeter * available for booking *",
+    descriptionSuffix: { prefix: " Now ", text: "available for booking", href: "https://www.thesmoreslab.com" },
     openColor: "#ffe5cc",
     photoColor: "#f5c9a0",
     accentColor: "#b06000",
@@ -46,35 +55,81 @@ export const SECTIONS: Section[] = [
         id: "smores-corporate",
         title: "Corporate Events",
         description: "",
-        photos: [
-          { src: '/images/smores-lab/corporate-events/Fora_Smorealis1.jpg' },
-          { src: '/images/smores-lab/corporate-events/enchanted_smorest1.JPG' },
-          { src: '/images/smores-lab/corporate-events/enchanted_smorest2.JPG' },
+        photos: [],
+        groups: [
+          {
+            title: "Group 1",
+            description: LOREM,
+            photos: [
+              { src: '/images/smores-lab/corporate-events/Fora_Smorealis1.jpg' },
+              { src: '/images/smores-lab/corporate-events/enchanted_smorest1.JPG' },
+              { src: '/images/smores-lab/corporate-events/enchanted_smorest2.JPG' },
+            ],
+          },
+          {
+            title: "Group 2",
+            description: LOREM,
+            photos: [],
+          },
         ],
         photoColor: "#e8b07a",
         accentColor: "#b06000",
       },
       {
         id: "smores-festivals",
-        title: "Festivals & Cultural",
+        title: "Festivals",
         description: "",
-        photos: [
-          { src: '/images/smores-lab/festivals/Aestival1.png' },
-          { src: '/images/smores-lab/festivals/CAMP Smore1.png' },
-          { src: '/images/smores-lab/festivals/CAMP Smore2.png' },
-          { src: '/images/smores-lab/festivals/NTSH1.png' },
+        photos: [],
+        groups: [
+          {
+            title: "Group 1",
+            description: LOREM,
+            photos: [
+              { src: '/images/smores-lab/festivals/Aestival1.png' },
+              { src: '/images/smores-lab/festivals/CAMP Smore1.png' },
+              { src: '/images/smores-lab/festivals/CAMP Smore2.png' },
+              { src: '/images/smores-lab/festivals/NTSH1.png' },
+            ],
+          },
+          {
+            title: "Group 2",
+            description: LOREM,
+            photos: [],
+          },
+          {
+            title: "Group 3",
+            description: LOREM,
+            photos: [],
+          },
         ],
         photoColor: "#e8b07a",
         accentColor: "#b06000",
       },
       {
         id: "smores-private",
-        title: "Private Celebrations",
+        title: "Parties",
         description: "",
-        photos: [
-          { src: '/images/smores-lab/parties/congealism1.png' },
-          { src: '/images/smores-lab/parties/smorgue1.jpg' },
-          { src: '/images/smores-lab/parties/smorgue2.JPG' },
+        photos: [],
+        groups: [
+          {
+            title: "Group 1",
+            description: LOREM,
+            photos: [
+              { src: '/images/smores-lab/parties/congealism1.png' },
+              { src: '/images/smores-lab/parties/smorgue1.jpg' },
+              { src: '/images/smores-lab/parties/smorgue2.JPG' },
+            ],
+          },
+          {
+            title: "Group 2",
+            description: LOREM,
+            photos: [],
+          },
+          {
+            title: "Group 3",
+            description: LOREM,
+            photos: [],
+          },
         ],
         photoColor: "#e8b07a",
         accentColor: "#b06000",
@@ -110,35 +165,64 @@ export const SECTIONS: Section[] = [
       },
       {
         id: "activations-oneoffs",
-        title: "One-Offs",
+        title: "Pop-Ups",
         description: "",
-        photos: [
-          { src: '/images/activations/pop-ups/Bunnyhana.png' },
-          { src: '/images/activations/pop-ups/bunnyhana1.jpeg' },
-          { src: '/images/activations/pop-ups/drz1.jpg' },
-          { src: '/images/activations/pop-ups/drz2.jpg' },
-          { src: '/images/activations/pop-ups/drz_team.jpg' },
-          { src: '/images/activations/pop-ups/pickleball1.jpg' },
-          { src: '/images/activations/pop-ups/pickleball5.jpg' },
-          { src: '/images/activations/pop-ups/pickleball7.jpg' },
-          { src: '/images/activations/pop-ups/wristlemania 2.png' },
+        photos: [],
+        groups: [
+          {
+            title: "Group 1",
+            description: LOREM,
+            photos: [
+              { src: '/images/activations/pop-ups/Bunnyhana.png' },
+              { src: '/images/activations/pop-ups/bunnyhana1.jpeg' },
+              { src: '/images/activations/pop-ups/drz1.jpg' },
+              { src: '/images/activations/pop-ups/drz2.jpg' },
+              { src: '/images/activations/pop-ups/drz_team.jpg' },
+              { src: '/images/activations/pop-ups/pickleball1.jpg' },
+              { src: '/images/activations/pop-ups/pickleball5.jpg' },
+              { src: '/images/activations/pop-ups/pickleball7.jpg' },
+              { src: '/images/activations/pop-ups/wristlemania 2.png' },
+            ],
+          },
+          { title: "Group 2", description: LOREM, photos: [] },
+          { title: "Group 3", description: LOREM, photos: [] },
+          { title: "Group 4", description: LOREM, photos: [] },
         ],
         photoColor: "#e8d870",
         accentColor: "#8a7000",
       },
       {
         id: "activations-weddings",
-        title: "Weddings",
+        title: "Weddings & Private",
         description: "",
-        photos: [
-          { src: '/images/activations/weddings/nothingtohydepark.jpg' },
-         { src: '/images/activations/weddings/hydepark2.png' },
-          { src: '/images/activations/weddings/Wimbleden_sign.gif' },
-          { src: '/images/activations/weddings/wimbleden1.jpg' },
-          { src: '/images/activations/weddings/wimbleden5.jpg' },
-          { src: '/images/activations/weddings/firestarters1.jpg' },
-          { src: '/images/activations/weddings/firestarters2.jpg' },
-          { src: '/images/activations/weddings/firestarters_sign.jpg' },
+        photos: [],
+        groups: [
+          {
+            title: "Nothing to Hyde Park",
+            description: LOREM,
+            photos: [
+              { src: '/images/activations/weddings/nothingtohydepark.jpg' },
+              { src: '/images/activations/weddings/hydepark2.png' },
+            ],
+          },
+          {
+            title: "The WimbleDen",
+            description: LOREM,
+            photos: [
+              { src: '/images/activations/weddings/Wimbleden_sign.gif' },
+              { src: '/images/activations/weddings/wimbleden1.jpg' },
+              { src: '/images/activations/weddings/wimbleden5.jpg' },
+            ],
+          },
+          {
+            title: "Fire Starters",
+            description: LOREM,
+            photos: [
+              { src: '/images/activations/weddings/firestarters1.jpg' },
+              { src: '/images/activations/weddings/firestarters2.jpg' },
+              { src: '/images/activations/weddings/firestarters_sign.jpg' },
+            ],
+          },
         ],
         photoColor: "#e8d870",
         accentColor: "#8a7000",
@@ -150,10 +234,9 @@ export const SECTIONS: Section[] = [
     number: "03",
     title: "The Playa Provides",
     meta: "in development",
-    url: "theplayaprovides.com",
     description:
       "Peer-to-peer lending platform for the Burning Man community, and anyone who'd rather borrow than buy. Independently conceived and built as sole founder, handling everything: vibe coding, architecture, UX, branding, copy, and marketing strategy.",
-    tag: "* in progress *",
+    descriptionSuffix: { prefix: " — ", text: "check it out", href: "https://www.theplayaprovides.com" },
     openColor: "#ccf0e0",
     photoColor: "#9adbc0",
     accentColor: "#1a7a4a",
