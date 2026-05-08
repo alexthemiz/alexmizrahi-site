@@ -263,8 +263,7 @@ export const SECTIONS: Section[] = [
     number: "04",
     title: "Communications",
     meta: "A decade spanning philanthropy, hospitality, and advocacy.",
-    description:
-      "The Open Society Foundations: Senior Communications Specialist. Media intelligence reports, global intranet management, internal communications, content writing and editing, media monitoring.\n\nThe Assemblage: Director of Communications. Member, guest, and community engagement; media outreach; event marketing.",
+    description: "",
     openColor: "#cce8ff",
     photoColor: "#9acef5",
     accentColor: "#1a5a9a",
@@ -274,7 +273,7 @@ export const SECTIONS: Section[] = [
       {
         id: "comms-osf",
         title: "Open Society Foundations",
-        description: "",
+        description: "Senior Communications Specialist. Media intelligence reports, global intranet management, internal communications, content writing and editing, media monitoring.",
         photos: [
           { src: '/images/communications/open-society-foundations/osf_logo.png' },
         ],
@@ -284,7 +283,7 @@ export const SECTIONS: Section[] = [
       {
         id: "comms-assemblage",
         title: "The Assemblage",
-        description: "",
+        description: "Director of Communications. Member, guest, and community engagement; media outreach; event marketing.",
         photos: [
           { src: '/images/communications/the-assemblage/TA_logo.gif' },
           { src: '/images/communications/the-assemblage/34135752_386039578547082_2567063899408957440_o.jpg' },
