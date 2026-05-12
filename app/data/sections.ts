@@ -286,7 +286,7 @@ export const SECTIONS: Section[] = [
       {
         id: "comms-assemblage",
         title: "The Assemblage // Director of Communications",
-        description: "Member, guest, and community engagement; media outreach; event marketing. Built social from zero to 40,000 Instagram followers, 44,000 email subscribers, and 500+ events.",
+        description: "Launched and managed communications for a three-location coworking space and event venue in New York. Built brand voice and social presence from zero — 40,000+ Instagram followers, 44,000 email subscribers.",
         headerImage: '/images/communications/the-assemblage/TA_logo.gif',
         photos: [],
         groups: [
@@ -302,7 +302,7 @@ export const SECTIONS: Section[] = [
               { src: '/images/communications/the-assemblage/press/people.png', href: 'https://people.com/travel/we-tried-it-a-wellness-hotel-that-features-yoga-meditation-ayurveda-and-zero-alcohol/' },
               { src: '/images/communications/the-assemblage/press/hollywood-reporter.png', href: 'https://www.hollywoodreporter.com/news/stay-new-york-6-new-notable-hotels-1200142' },
               { src: '/images/communications/the-assemblage/press/entrepreneur.png', href: 'https://www.entrepreneur.com/article/310749' },
-              { src: '/images/communications/the-assemblage/press/refinery29.jpg', href: 'https://www.facebook.com/share/v/1V8WhzQYzi/' },
+              { src: '/images/communications/the-assemblage/press/refinery29.png', href: 'https://www.facebook.com/share/v/1V8WhzQYzi/' },
               { src: '/images/communications/the-assemblage/press/inverse.png', href: 'https://www.inverse.com/article/38973-coworking-the-assemblage-new-york-city' },
             ],
             textLinks: [
@@ -315,7 +315,7 @@ export const SECTIONS: Section[] = [
           },
           {
             title: "Events",
-            description: "",
+            description: "Promoted 500+ events, from intimate workshops to major talks with speakers including Alexandria Ocasio-Cortez, Seth Godin, Deepak Chopra, and Andrew Yang. Managed all member communications across web, mobile, SMS, and in-house channels.",
             slideshow: true,
             photos: [
               { src: '/images/communications/the-assemblage/events/ta-event-1.jpg' },
@@ -325,6 +325,25 @@ export const SECTIONS: Section[] = [
               { src: '/images/communications/the-assemblage/events/ta-event-5.jpg' },
               { src: '/images/communications/the-assemblage/events/ta-event-6.jpg' },
               { src: '/images/communications/the-assemblage/events/ta-event-7.jpg' },
+            ],
+          },
+          {
+            title: "Fundamental",
+            description: "Served as Director of Social Media for Fundamental, the first crowdfunding campaign raising money for psychedelic research — $150K+ for four clinical studies across NYU and MAPS. Managed digital presence, press outreach, and donor relations.",
+            photos: [],
+            textLinks: [
+              { outlet: "HuffPost", headline: "Fundamental: The First Campaign to Crowdfund Psychedelic Research", href: "https://www.huffpost.com/entry/fundamental-psychedelic-drugs_n_5912109de4b050bdca60126c" },
+              { outlet: "Wired", headline: "Scientists Want to Give You Money to Study Psychedelics", href: "https://www.wired.com/2017/05/scientists-want-give-money-study-psychedelics/" },
+              { outlet: "The Independent", headline: "The cancer patient using psychedelic drugs to conquer his fear of death", href: "https://www.the-independent.com/life-style/health-and-families/cancer-patient-psychedelic-drugs-ayahuasca-lsd-mdma-mushroom-death-fear-help-end-life-anxiety-rodrigo-nino-new-york-city-real-estate-developer-a7726611.html" },
+              { outlet: "Boing Boing", headline: "MDMA vs PTSD: crowdfunding psychedelic research", href: "https://boingboing.net/2017/05/10/mdma-vs-ptsd.html" },
+              { outlet: "Inc.", headline: "How a Man's Near-Death With Cancer Inspired Him to Fund LSD Research", href: "https://www.inc.com/will-yakowicz/crowdfunding-fundamental-lsd-psilocybin-mdma.html" },
+              { outlet: "Business Insider", headline: "Microdosing LSD: effects, risks, and science", href: "https://www.businessinsider.com/microdosing-lsd-effects-risks-science-2017-5" },
+              { outlet: "Crain's New York", headline: "Bellevue's Dr. Stephen Ross launches psychedelics into the mainstream", href: "https://www.crainsnewyork.com/article/20170508/HEALTH_CARE/170509897/bellevue-dr-stephen-ross-launches-psychedelics-into-the-mainstream/" },
+              { outlet: "Big Issue North", headline: "Prescription/Proscription", href: "https://www.bigissuenorth.com/features/2017/05/prescription-proscription/" },
+              { outlet: "MAPS", headline: "Fundamental: Crowdfunding Psychedelic Research", href: "https://maps.org/news/bulletin/fundamental-crowdfunding-psychedelic-research/" },
+              { outlet: "Vice", headline: "First-Ever LSD Microdosing Study Will Pit the Human Brain Against AI", href: "https://www.vice.com/en/article/first-ever-lsd-microdosing-study-will-pit-the-human-brain-against-ai/" },
+              { outlet: "Mashable", headline: "LSD microdosing scientific study", href: "https://mashable.com/article/lsd-microdosing-scientific-study" },
+              { outlet: "CrowdFund Insider", headline: "Fundamental: Crowdfunding Alternative Mental Health Therapies Research", href: "https://www.crowdfundinsider.com/2017/05/99597-fundamental-rodrigo-nino-crowdfunding-alternative-mental-health-therapies-research/" },
             ],
           },
         ],
