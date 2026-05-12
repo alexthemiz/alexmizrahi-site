@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { SECTIONS } from "../data/sections";
 import PhotoStrip from "./PhotoStrip";
+import Slideshow from "./Slideshow";
 
 function darken(hex: string, amount = 15): string {
   const r = Math.max(0, parseInt(hex.slice(1, 3), 16) - amount);
@@ -213,11 +214,29 @@ export default function Accordion() {
                                           {group.description}
                                         </p>
                                       )}
-                                      <PhotoStrip
-                                        photos={group.photos}
-                                        photoColor={sub.photoColor}
-                                        accentColor={sub.accentColor}
-                                      />
+                                      {group.slideshow ? (
+                                        <Slideshow photos={group.photos} accentColor={sub.accentColor} />
+                                      ) : (
+                                        <PhotoStrip
+                                          photos={group.photos}
+                                          photoColor={sub.photoColor}
+                                          accentColor={sub.accentColor}
+                                        />
+                                      )}
+                                      {group.textLinks && group.textLinks.length > 0 && (
+                                        <ul style={{ listStyle: "none", padding: 0, margin: "8px 0 0", display: "flex", flexDirection: "column", gap: "4px" }}>
+                                          {group.textLinks.map((link) => (
+                                            <li key={link.headline} style={{ fontFamily: "var(--font-vt323), monospace", fontSize: "18px", color: "#1a1a2e" }}>
+                                              <span style={{ color: sub.accentColor, fontWeight: "bold" }}>{link.outlet}:</span>{" "}
+                                              {link.href ? (
+                                                <a href={link.href} target="_blank" rel="noopener noreferrer" style={{ color: "#1a1a2e", textDecoration: "underline" }}>{link.headline}</a>
+                                              ) : (
+                                                <span>{link.headline}</span>
+                                              )}
+                                            </li>
+                                          ))}
+                                        </ul>
+                                      )}
                                     </div>
                                   ))}
                                   <PhotoStrip

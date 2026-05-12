@@ -4,6 +4,8 @@ export type PhotoGroup = {
   title: string;
   description: string;
   photos: Photo[];
+  slideshow?: boolean;
+  textLinks?: Array<{ outlet: string; headline: string; href?: string }>;
 };
 
 export type SubSection = {
@@ -272,8 +274,8 @@ export const SECTIONS: Section[] = [
     subSections: [
       {
         id: "comms-osf",
-        title: "Open Society Foundations",
-        description: "Senior Communications Specialist. Media intelligence reports, global intranet management, internal communications, content writing and editing, media monitoring.",
+        title: "Open Society Foundations // Senior Communications Specialist",
+        description: "Media intelligence reports, global intranet management, internal communications, content writing and editing, media monitoring.",
         photos: [
           { src: '/images/communications/open-society-foundations/osf_logo.png' },
         ],
@@ -282,17 +284,49 @@ export const SECTIONS: Section[] = [
       },
       {
         id: "comms-assemblage",
-        title: "The Assemblage",
-        description: "Director of Communications. Member, guest, and community engagement; media outreach; event marketing.",
+        title: "The Assemblage // Director of Communications",
+        description: "Member, guest, and community engagement; media outreach; event marketing. Built social from zero to 40,000 Instagram followers, 44,000 email subscribers, and 500+ events.",
         photos: [
           { src: '/images/communications/the-assemblage/TA_logo.gif' },
-          { src: '/images/communications/the-assemblage/ta-event-1.jpg' },
-          { src: '/images/communications/the-assemblage/ta-event-2.jpg' },
-          { src: '/images/communications/the-assemblage/ta-event-3.jpg' },
-          { src: '/images/communications/the-assemblage/ta-event-4.jpg' },
-          { src: '/images/communications/the-assemblage/ta-event-5.jpg' },
-          { src: '/images/communications/the-assemblage/ta-event-6.jpg' },
-          { src: '/images/communications/the-assemblage/ta-event-7.jpg' },
+        ],
+        groups: [
+          {
+            title: "Press",
+            description: "",
+            photos: [
+              { src: '/images/communications/the-assemblage/press/nyt.png', href: 'https://www.nytimes.com/2017/11/21/style/new-york-private-clubs-assemblage.html' },
+              { src: '/images/communications/the-assemblage/press/forbes.png', href: 'https://www.forbes.com/sites/gregoryferenstein/2018/12/29/the-assemblage-opens-a-co-working-community-for-social-entrepreneurs/' },
+              { src: '/images/communications/the-assemblage/press/fast-company.png', href: 'https://www.fastcompany.com/90257094/inside-the-assemblage-where-co-working-means-wellness-and-ayurvedic-elixirs' },
+              { src: '/images/communications/the-assemblage/press/washington-post.png', href: 'https://www.washingtonpost.com/graphics/2019/lifestyle/travel/amp-stories/a-locals-guide-to-what-to-eat-and-do-in-new-york-city/' },
+              { src: '/images/communications/the-assemblage/press/business-insider.png', href: 'https://www.businessinsider.com/photos-the-assemblage-coworking-space-new-york-city-2018-3' },
+              { src: '/images/communications/the-assemblage/press/people.png', href: 'https://people.com/travel/we-tried-it-a-wellness-hotel-that-features-yoga-meditation-ayurveda-and-zero-alcohol/' },
+              { src: '/images/communications/the-assemblage/press/hollywood-reporter.png', href: 'https://www.hollywoodreporter.com/news/stay-new-york-6-new-notable-hotels-1200142' },
+              { src: '/images/communications/the-assemblage/press/entrepreneur.png', href: 'https://www.entrepreneur.com/article/310749' },
+              { src: '/images/communications/the-assemblage/press/refinery29.jpg', href: 'https://www.facebook.com/share/v/1V8WhzQYzi/' },
+              { src: '/images/communications/the-assemblage/press/inverse.png', href: 'https://www.inverse.com/article/38973-coworking-the-assemblage-new-york-city' },
+            ],
+            textLinks: [
+              { outlet: "Bon Appetit", headline: "I Tried 'Wellness Coworking' and It Made Me Feel Profoundly Alone" },
+              { outlet: "Conde Nast Traveler", headline: "Hannah Bronfman on the Spa Treatments She'd Fly For" },
+              { outlet: "Fathom Away", headline: "She Has a Vision for Luxurious Co-Working, Co-Living, and Co-Traveling" },
+              { outlet: "WWD", headline: "What to Watch: Industry Keeps Focus on Models' Well-being" },
+              { outlet: "L'Officiel", headline: "The Assemblage's New Wellness-Focused Hotel Is Just What You Needed" },
+            ],
+          },
+          {
+            title: "Events",
+            description: "",
+            slideshow: true,
+            photos: [
+              { src: '/images/communications/the-assemblage/events/ta-event-1.jpg' },
+              { src: '/images/communications/the-assemblage/events/ta-event-2.jpg' },
+              { src: '/images/communications/the-assemblage/events/ta-event-3.jpg' },
+              { src: '/images/communications/the-assemblage/events/ta-event-4.jpg' },
+              { src: '/images/communications/the-assemblage/events/ta-event-5.jpg' },
+              { src: '/images/communications/the-assemblage/events/ta-event-6.jpg' },
+              { src: '/images/communications/the-assemblage/events/ta-event-7.jpg' },
+            ],
+          },
         ],
         photoColor: "#78b5e8",
         accentColor: "#1a5a9a",
