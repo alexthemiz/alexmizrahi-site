@@ -2,7 +2,7 @@ export type Photo = { src: string; caption?: string; href?: string };
 
 export type PhotoGroup = {
   title: string;
-  description: string;
+  description?: string;
   photos: Photo[];
   slideshow?: boolean;
   textLinks?: Array<{ outlet: string; headline: string; href?: string }>;
@@ -12,6 +12,7 @@ export type SubSection = {
   id: string;
   title: string;
   description: string;
+  headerImage?: string;
   photos: Photo[];
   groups?: PhotoGroup[];
   photoColor: string;
@@ -286,9 +287,8 @@ export const SECTIONS: Section[] = [
         id: "comms-assemblage",
         title: "The Assemblage // Director of Communications",
         description: "Member, guest, and community engagement; media outreach; event marketing. Built social from zero to 40,000 Instagram followers, 44,000 email subscribers, and 500+ events.",
-        photos: [
-          { src: '/images/communications/the-assemblage/TA_logo.gif' },
-        ],
+        headerImage: '/images/communications/the-assemblage/TA_logo.gif',
+        photos: [],
         groups: [
           {
             title: "Press",
@@ -306,11 +306,11 @@ export const SECTIONS: Section[] = [
               { src: '/images/communications/the-assemblage/press/inverse.png', href: 'https://www.inverse.com/article/38973-coworking-the-assemblage-new-york-city' },
             ],
             textLinks: [
-              { outlet: "Bon Appetit", headline: "I Tried 'Wellness Coworking' and It Made Me Feel Profoundly Alone" },
-              { outlet: "Conde Nast Traveler", headline: "Hannah Bronfman on the Spa Treatments She'd Fly For" },
-              { outlet: "Fathom Away", headline: "She Has a Vision for Luxurious Co-Working, Co-Living, and Co-Traveling" },
-              { outlet: "WWD", headline: "What to Watch: Industry Keeps Focus on Models' Well-being" },
-              { outlet: "L'Officiel", headline: "The Assemblage's New Wellness-Focused Hotel Is Just What You Needed" },
+              { outlet: "Bon Appetit", headline: "I Tried 'Wellness Coworking' and It Made Me Feel Profoundly Alone", href: "https://www.bonappetit.com/story/wellness-coworking" },
+              { outlet: "Conde Nast Traveler", headline: "Hannah Bronfman on the Spa Treatments She'd Fly For", href: "https://www.cntraveler.com/story/wellness-influencer-hannah-bronfman-on-the-spa-treatments-shed-fly-for" },
+              { outlet: "Fathom Away", headline: "She Has a Vision for Luxurious Co-Working, Co-Living, and Co-Traveling", href: "https://fathomaway.com/interview-magdalena-sartori-the-assemblage-nyc/" },
+              { outlet: "WWD", headline: "What to Watch: Industry Keeps Focus on Models' Well-being", href: "https://wwd.com/fashion-news/fashion-features/what-to-watch-industry-keeps-focus-on-models-well-being-1202778170/" },
+              { outlet: "L'Officiel", headline: "The Assemblage's New Wellness-Focused Hotel Is Just What You Needed", href: "https://www.lofficielusa.com/wellness/the-assemblage-wellness-hotel" },
             ],
           },
           {

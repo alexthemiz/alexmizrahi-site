@@ -188,6 +188,10 @@ export default function Accordion() {
                                 paddingRight: "16px",
                               }}
                             >
+                              {sub.headerImage && (
+                                // eslint-disable-next-line @next/next/no-img-element
+                                <img src={sub.headerImage} alt="" style={{ height: "60px", width: "auto", display: "block", marginBottom: "12px" }} />
+                              )}
                               {sub.description && (
                                 <p
                                   className="font-vt323 mb-4 leading-relaxed whitespace-pre-line"
@@ -202,7 +206,7 @@ export default function Accordion() {
                                     <div key={group.title} style={{ marginBottom: "20px" }}>
                                       <p
                                         className="font-vt323"
-                                        style={{ fontSize: "18px", color: "#1a1a2e", fontWeight: "bold", marginBottom: "4px" }}
+                                        style={{ fontSize: "18px", color: "#1a1a2e", fontWeight: "bold", marginBottom: "8px" }}
                                       >
                                         {group.title}
                                       </p>
@@ -227,9 +231,10 @@ export default function Accordion() {
                                         <ul style={{ listStyle: "none", padding: 0, margin: "8px 0 0", display: "flex", flexDirection: "column", gap: "4px" }}>
                                           {group.textLinks.map((link) => (
                                             <li key={link.headline} style={{ fontFamily: "var(--font-vt323), monospace", fontSize: "18px", color: "#1a1a2e" }}>
-                                              <span style={{ color: sub.accentColor, fontWeight: "bold" }}>{link.outlet}:</span>{" "}
+                                              <span style={{ color: "#1a1a2e" }}>{link.outlet}</span>
+                                              {" — "}
                                               {link.href ? (
-                                                <a href={link.href} target="_blank" rel="noopener noreferrer" style={{ color: "#1a1a2e", textDecoration: "underline" }}>{link.headline}</a>
+                                                <a href={link.href} target="_blank" rel="noopener noreferrer" style={{ color: "#1a5a9a", textDecoration: "underline" }}>{link.headline}</a>
                                               ) : (
                                                 <span>{link.headline}</span>
                                               )}

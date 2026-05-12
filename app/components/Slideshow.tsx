@@ -51,6 +51,7 @@ export default function Slideshow({ photos, accentColor }: SlideshowProps) {
             photo={photos[index]}
             accentColor={accentColor}
             onClick={() => setOpenPhoto(photos[index])}
+            imageWidth={400}
           />
           <span style={{ fontFamily: "var(--font-vt323), monospace", fontSize: "16px", color: accentColor }}>
             {index + 1} / {photos.length}

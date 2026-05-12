@@ -4,9 +4,10 @@ interface IEFrameProps {
   photo: Photo;
   accentColor: string;
   onClick: () => void;
+  imageWidth?: number;
 }
 
-export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
+export default function IEFrame({ photo, accentColor, onClick, imageWidth = 200 }: IEFrameProps) {
   const filename = photo.src.split("/").pop() ?? "image";
   const encodedSrc = encodeURI(photo.src);
 
@@ -15,7 +16,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
     <img
       src={encodedSrc}
       alt={photo.caption ?? ""}
-      style={{ width: "200px", height: "auto", display: "block" }}
+      style={{ width: `${imageWidth}px`, height: "auto", display: "block" }}
     />
   );
 
@@ -29,7 +30,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
         display: "inline-flex",
         flexDirection: "column",
         userSelect: "none",
-        width: "216px",
+        width: `${imageWidth + 16}px`,
       }}
     >
       {/* Title bar */}
@@ -54,7 +55,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
             marginLeft: "4px",
             overflow: "hidden",
             whiteSpace: "nowrap",
-            maxWidth: "140px",
+            maxWidth: `${imageWidth - 60}px`,
             textOverflow: "ellipsis",
           }}
         >
