@@ -232,7 +232,7 @@ export default function Accordion() {
                                           {group.textLinks.map((link) => (
                                             <li key={link.headline} style={{ fontFamily: "var(--font-vt323), monospace", fontSize: "18px", color: "#1a1a2e" }}>
                                               <span style={{ color: "#1a1a2e" }}>{link.outlet}</span>
-                                              {" — "}
+                                              {": "}
                                               {link.href ? (
                                                 <a href={link.href} target="_blank" rel="noopener noreferrer" style={{ color: "#1a5a9a", textDecoration: "underline" }}>{link.headline}</a>
                                               ) : (
