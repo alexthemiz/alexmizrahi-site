@@ -14,7 +14,26 @@
       "Bash(winget list *)",
       "mcp__vercel__deploy_to_vercel",
       "Bash(vercel deploy *)",
-      "Bash(python3 -)"
+      "Bash(python3 -)",
+      "Bash(npm install *)",
+      "Bash(node -e \"require\\('resend'\\); console.log\\('ok'\\)\")",
+      "Bash(vercel --prod)",
+      "Bash(find public *)",
+      "Bash(find app *)",
+      "Bash(ls public/)",
+      "Bash(cp public/images/favicon.png app/icon.png)",
+      "Bash(git rm *)",
+      "Bash(ls public/images/*icon*)",
+      "Bash(dir public\\\\images\\\\*icon*)",
+      "Bash(python3 -c ' *)",
+      "Bash(python -c ' *)",
+      "Bash(powershell -Command 'Add-Type -AssemblyName System.Drawing; foreach \\($f in @\\('\\\\''public/images/stick_icon.png'\\\\'','\\\\''public/images/kazoo_icon.png'\\\\''\\)\\) { $img = [System.Drawing.Image]::FromFile\\(\\(Resolve-Path $f\\)\\); Write-Output \"$f $\\($img.Width\\)x$\\($img.Height\\)\"; $img.Dispose\\(\\) }')",
+      "mcp__vercel__list_deployments",
+      "Bash(node --input-type=module)",
+      "Bash(cd \"c:\\\\Users\\\\alexm\\\\Documents\\\\alexmizrahi-site\" && mkdir -p public/images/communications/the-assemblage/events public/images/communications/the-assemblage/press && mv public/images/communications/the-assemblage/ta-event-*.jpg public/images/communications/the-assemblage/events/ && ls public/images/communications/the-assemblage/events/)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\alexm\\Documents\\alexmizrahi-site\\public\\images\\communications\\the-assemblage"
     ]
   }
 }
