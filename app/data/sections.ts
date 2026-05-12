@@ -1,4 +1,4 @@
-export type Photo = { src: string; caption?: string };
+export type Photo = { src: string; caption?: string; href?: string };
 
 export type PhotoGroup = {
   title: string;
@@ -299,21 +299,27 @@ export const SECTIONS: Section[] = [
       },
       {
         id: "comms-bluestate",
-        title: "Blue State Digital",
-        description: "Clients: US Olympic Committee, Coalition to Protect America's Health Care, Be The Match, Purina",
+        title: "Blue State Digital // Associate Social Media Strategist",
+        description: "Wrote social content, developed strategies, managed communities, and built content calendars for nonprofits, advocacy organizations, and brands.",
+        groups: [
+          {
+            title: "Coalition to Protect America's Health Care",
+            description: "Multi-channel digital advocacy campaign fighting federal funding cuts to hospitals — 358,000+ messages to Congress, 3,000+ phone calls, cuts averted. Gold and Silver at the inaugural Healthcare Marketing IMPACT Awards.",
+            photos: [
+              { src: '/images/communications/blue-state-digital/bsd_CPAH_logo-fullcolor.png' },
+              { src: '/images/communications/blue-state-digital/hospitalheroes.png' },
+              { src: '/images/communications/blue-state-digital/marketing-impact-award.jpg', caption: 'Healthcare Marketing IMPACT Awards — Gold & Silver', href: 'https://www.bluestate.co/news/campaign-of-the-year-healthcare-marketing-impact-awards' },
+            ],
+          },
+        ],
         photos: [
           { src: '/images/communications/blue-state-digital/usoc.png' },
-          { src: '/images/communications/blue-state-digital/bsd_CPAH_logo-fullcolor.png' },
-          { src: '/images/communications/blue-state-digital/hospitalheroes.png' },
+          { src: '/images/communications/blue-state-digital/image-asset.png' },
+          { src: '/images/communications/blue-state-digital/image-asset_4.png' },
           { src: '/images/communications/blue-state-digital/btm_logo.png' },
           { src: '/images/communications/blue-state-digital/purina.png' },
           { src: '/images/communications/blue-state-digital/purina2.png' },
           { src: '/images/communications/blue-state-digital/fuels.png' },
-          { src: '/images/communications/blue-state-digital/image-asset.jpg' },
-          { src: '/images/communications/blue-state-digital/image-asset.png' },
-          { src: '/images/communications/blue-state-digital/image-asset_4.png' },
-          { src: '/images/communications/blue-state-digital/image-asset_5.png' },
-          { src: '/images/communications/blue-state-digital/marketing-impact-award.jpg' },
         ],
         photoColor: "#78b5e8",
         accentColor: "#1a5a9a",

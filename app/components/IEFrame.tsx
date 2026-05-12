@@ -10,6 +10,15 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
   const filename = photo.src.split("/").pop() ?? "image";
   const encodedSrc = encodeURI(photo.src);
 
+  const image = (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={encodedSrc}
+      alt={photo.caption ?? ""}
+      style={{ width: "200px", height: "auto", display: "block" }}
+    />
+  );
+
   return (
     <div
       onClick={onClick}
@@ -20,6 +29,7 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
         display: "inline-flex",
         flexDirection: "column",
         userSelect: "none",
+        width: "216px",
       }}
     >
       {/* Title bar */}
@@ -52,62 +62,19 @@ export default function IEFrame({ photo, accentColor, onClick }: IEFrameProps) {
         </span>
       </div>
 
-      {/* URL bar */}
-      <div
-        style={{
-          backgroundColor: "#d4d0c8",
-          borderBottom: "1px solid #808080",
-          borderTop: "1px solid #ffffff",
-          padding: "2px 4px",
-          display: "flex",
-          alignItems: "center",
-          gap: "4px",
-        }}
-      >
-        <span style={{ fontSize: "10px" }}>🌐</span>
-        <span
-          style={{
-            fontSize: "10px",
-            fontFamily: "monospace",
-            color: "#000080",
-            flex: 1,
-            minWidth: 0,
-            overflow: "hidden",
-            whiteSpace: "nowrap",
-            textOverflow: "ellipsis",
-          }}
-        >
-          {`C:\\photos\\${filename}`}
-        </span>
-        <button
-          type="button"
-          style={{
-            fontSize: "9px",
-            fontFamily: "monospace",
-            backgroundColor: "#d4d0c8",
-            border: "1px solid #808080",
-            padding: "0 4px",
-            cursor: "default",
-          }}
-          onClick={(e) => e.stopPropagation()}
-          tabIndex={-1}
-        >
-          Go
-        </button>
-      </div>
-
       {/* Photo + decorative scrollbar */}
       <div style={{ display: "flex" }}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={encodedSrc}
-          alt={photo.caption ?? ""}
-          style={{
-            width: "200px",
-            height: "auto",
-            display: "block",
-          }}
-        />
+        {photo.href ? (
+          <a
+            href={photo.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            style={{ display: "block", flexShrink: 0 }}
+          >
+            {image}
+          </a>
+        ) : image}
         {/* Scrollbar */}
         <div
           aria-hidden="true"
