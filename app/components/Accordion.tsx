@@ -196,29 +196,36 @@ export default function Accordion() {
                                 </p>
                               )}
                               {sub.groups && sub.groups.length > 0 ? (
-                                sub.groups.map((group) => (
-                                  <div key={group.title} style={{ marginBottom: "20px" }}>
-                                    <p
-                                      className="font-vt323"
-                                      style={{ fontSize: "18px", color: "#1a1a2e", fontWeight: "bold", marginBottom: "4px" }}
-                                    >
-                                      {group.title}
-                                    </p>
-                                    {group.description && (
+                                <>
+                                  {sub.groups.map((group) => (
+                                    <div key={group.title} style={{ marginBottom: "20px" }}>
                                       <p
-                                        className="font-vt323 leading-relaxed whitespace-pre-line"
-                                        style={{ fontSize: "18px", color: "#1a1a2e", marginBottom: "8px" }}
+                                        className="font-vt323"
+                                        style={{ fontSize: "18px", color: "#1a1a2e", fontWeight: "bold", marginBottom: "4px" }}
                                       >
-                                        {group.description}
+                                        {group.title}
                                       </p>
-                                    )}
-                                    <PhotoStrip
-                                      photos={group.photos}
-                                      photoColor={sub.photoColor}
-                                      accentColor={sub.accentColor}
-                                    />
-                                  </div>
-                                ))
+                                      {group.description && (
+                                        <p
+                                          className="font-vt323 leading-relaxed whitespace-pre-line"
+                                          style={{ fontSize: "18px", color: "#1a1a2e", marginBottom: "8px" }}
+                                        >
+                                          {group.description}
+                                        </p>
+                                      )}
+                                      <PhotoStrip
+                                        photos={group.photos}
+                                        photoColor={sub.photoColor}
+                                        accentColor={sub.accentColor}
+                                      />
+                                    </div>
+                                  ))}
+                                  <PhotoStrip
+                                    photos={sub.photos}
+                                    photoColor={sub.photoColor}
+                                    accentColor={sub.accentColor}
+                                  />
+                                </>
                               ) : (
                                 <PhotoStrip
                                   photos={sub.photos}
