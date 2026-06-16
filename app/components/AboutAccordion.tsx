@@ -62,7 +62,7 @@ function HuffPoSpoilersContent() {
       <H4>By @HuffPoSpoilers</H4>
       <ul style={{ listStyle: "none", padding: 0, margin: "0 0 4px", display: "flex", flexDirection: "column", gap: "8px" }}>
         <Li>Panelist, SXSW Interactive 2017: <A href="http://schedule.sxsw.com/2017/events/PP62522">Gone Fishing: How to Not Let Clickbait Reel You In</A></Li>
-        <Li>L.A. Weekly (Sept. 12, 2013): <A href="http://www.laweekly.com/news/an-open-letter-from-huffpospoilers-were-not-gonna-click-it-any-more-4176048">An Open Letter from @HuffPoSpoilers: We're Not Gonna Click it Any More</A> <Ed>[ed note: we've kept clicking anyway]</Ed></Li>
+        <Li>L.A. Weekly (Sept. 12, 2013): <A href="http://www.laweekly.com/news/an-open-letter-from-huffpospoilers-were-not-gonna-click-it-any-more-4176048">An Open Letter from @HuffPoSpoilers: We&apos;re Not Gonna Click it Any More</A> <Ed>[ed note: we&apos;ve kept clicking anyway]</Ed></Li>
         <Li>Medium (June 13, 2013): <A href="https://medium.com/i-m-h-o/a-glossary-of-words-and-phrases-the-huffington-post-needs-to-ban-from-its-twitter-feed-51eab44b5859">A Glossary of Words and Phrases the Huffington Post Needs to Ban from its Twitter Feed</A></Li>
       </ul>
 
@@ -76,8 +76,8 @@ function HuffPoSpoilersContent() {
         <Li>Digiday (May 30, 2014): <A href="http://digiday.com/publishers/clickbait-spoilers/">Spoiler Twitter accounts</A></Li>
         <Li>Think Progress (June 2, 2014): <A href="http://thinkprogress.org/culture/2014/06/02/3443688/clickbait-fighting/">The Way One Man Is Waging War On Clickbait Will Blow Your Mind</A></Li>
         <Li>HyperVocal (June 2, 2014): <A href="http://hypervocal.com/news/2014/savedyouaclick-huffpospoilers-interview/">Clickbait-Ruining Kings: Q&A With @SavedYouAClick and @HuffPoSpoilers</A></Li>
-        <Li>ABCNews.com (April 30, 2013): <A href="http://abcnews.go.com/blogs/business/2013/04/ny-mans-tweets-spoil-news-stories/">NY Man's Tweets Spoil News Stories</A></Li>
-        <Li>Adweek (May 7, 2013): <A href="http://www.adweek.com/socialtimes/huffpospoilers/483194">@HuffPoSpoilers Gives In To Huffington Post Click-Bait So You Don't Have To</A></Li>
+        <Li>ABCNews.com (April 30, 2013): <A href="http://abcnews.go.com/blogs/business/2013/04/ny-mans-tweets-spoil-news-stories/">NY Man&apos;s Tweets Spoil News Stories</A></Li>
+        <Li>Adweek (May 7, 2013): <A href="http://www.adweek.com/socialtimes/huffpospoilers/483194">@HuffPoSpoilers Gives In To Huffington Post Click-Bait So You Don&apos;t Have To</A></Li>
         <Li>DailyDot (June 3, 2013): <A href="http://www.dailydot.com/lol/huffpospoilers-alex-mizrahi-twitter/">@HuffPoSpoilers delivers all the news and none of the clickbait</A></Li>
         <Li>HuffingtonPost (April 25, 2013): <A href="http://www.huffingtonpost.com/2013/04/25/huffpospoilers-twitter_n_3157491.html">HuffPoSpoilers Makes Fun Of Huffington Post Twitter Account</A></Li>
       </ul>
@@ -88,11 +88,11 @@ function HuffPoSpoilersContent() {
 function ArchivesContent() {
   return (
     <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
-      <Li>Panelist, MediaPost Social Media Insider Summit 2014: <A href="http://www.mediapost.com/socialmediainsidersummit/speaker/11544/alex-mizrahi">Social's Next, Next Wave</A></Li>
-      <Li>Digiday (Oct. 10, 2014): <A href="http://digiday.com/publishers/many-many-ways-publishers-define-clickbait/">The many different ways publishers define 'clickbait'</A></Li>
-      <Li>Digiday (July 9, 2014): <A href="http://digiday.com/brands/cia-social-strategy/">Is the CIA's cheeky social approach smart strategy?</A></Li>
+      <Li>Panelist, MediaPost Social Media Insider Summit 2014: <A href="http://www.mediapost.com/socialmediainsidersummit/speaker/11544/alex-mizrahi">Social&apos;s Next, Next Wave</A></Li>
+      <Li>Digiday (Oct. 10, 2014): <A href="http://digiday.com/publishers/many-many-ways-publishers-define-clickbait/">The many different ways publishers define &apos;clickbait&apos;</A></Li>
+      <Li>Digiday (July 9, 2014): <A href="http://digiday.com/brands/cia-social-strategy/">Is the CIA&apos;s cheeky social approach smart strategy?</A></Li>
       <Li>BlueStateDigital Blog (Aug. 15, 2014): <A href="https://www.bluestatedigital.com/news/entry/is-the-ice-bucket-challenge-leaving-you-cold">Is The Ice Bucket Challenge Leaving You Cold?</A></Li>
-      <Li>Sports Illustrated's The Cauldron (April 6, 2016): <A href="https://thecauldron.si.com/moot-points-d28489d60eb8">The Greatest Moot Points In Sports History</A></Li>
+      <Li>Sports Illustrated&apos;s The Cauldron (April 6, 2016): <A href="https://thecauldron.si.com/moot-points-d28489d60eb8">The Greatest Moot Points In Sports History</A></Li>
       <Li>Medium (March 2, 2016): <A href="https://medium.com/@alexmiz/a-spotlight-delight-66c0d8fad6c0">A Spotlight Delight: Journalism on the Screen, Past Present & Future</A></Li>
       <Li>Medium (Jan. 24, 2017): <A href="https://medium.com/@alexmiz/marching-was-just-the-beginning-be78b1b3e759">Marching was Just the Beginning</A></Li>
       <Li>Mashable (Oct. 31, 2014): <A href="http://mashable.com/2014/10/31/hallowmeme-costumes/">35 #HallowMEME costumes more intense than your Internet addiction</A> (I went as potato salad)</Li>
