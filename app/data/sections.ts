@@ -395,7 +395,6 @@ export const SECTIONS: Section[] = [
         title: "SapientRazorfish",
         description: "Clients: Mercedes-Benz, smartUSA",
         photos: [
-          { src: '/images/copywriting/sapientrazorfish/mercedes-benz-logo-11521539785ghkyjiijih.png' },
           { src: '/images/copywriting/sapientrazorfish/smart-car-logo.png' },
           { src: '/images/copywriting/sapientrazorfish/mb.png' },
           { src: '/images/copywriting/sapientrazorfish/mercedes_email.png' },
