@@ -36,7 +36,7 @@ export default function About() {
           </p>
 
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/about/alexmizrahi1.JPG" alt="Alex Mizrahi" style={{ display: "block", margin: "0 auto", maxWidth: "400px", width: "100%", height: "auto" }} />
+          <img src="/images/about/alexmizrahi1.JPG" alt="Alex Mizrahi" style={{ display: "block", margin: "0 auto", maxWidth: "133px", width: "100%", height: "auto" }} />
 
           <p
             className="font-vt323"
@@ -46,7 +46,7 @@ export default function About() {
           </p>
 
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/about/alexmizrahi2.jpg" alt="Alex Mizrahi" style={{ display: "block", margin: "0 auto", maxWidth: "400px", width: "100%", height: "auto" }} />
+          <img src="/images/about/alexmizrahi2.jpg" alt="Alex Mizrahi" style={{ display: "block", margin: "0 auto", maxWidth: "133px", width: "100%", height: "auto" }} />
 
           <p
             className="font-vt323"
@@ -56,7 +56,7 @@ export default function About() {
           </p>
 
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/about/alexmizrahi3.webp" alt="Alex Mizrahi" style={{ display: "block", margin: "0 auto", maxWidth: "400px", width: "100%", height: "auto" }} />
+          <img src="/images/about/alexmizrahi3.webp" alt="Alex Mizrahi" style={{ display: "block", margin: "0 auto", maxWidth: "133px", width: "100%", height: "auto" }} />
 
           <p
             className="font-vt323"
