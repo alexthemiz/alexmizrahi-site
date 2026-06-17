@@ -55,7 +55,7 @@ Also accessible at alexmizrahi-site.vercel.app
 ## Structure
 - Single page (index): header + 5 accordions + footer
 - /about: bio + photos + resumes + Writings & Press accordion + Community & Service accordion
-- /contact: retro guestbook with Resend email integration
+- /contact: removed; header nav now links directly to mailto: and LinkedIn
 - /puns: TBD (concept not ready)
 
 ## Nested Accordion Structure

@@ -34,27 +34,41 @@ export default function Header() {
         </p>
 
         {/* Nav */}
-        <nav className="flex items-center justify-center gap-4">
+        <nav className="flex items-center justify-center gap-2">
           <Link
             href="/about"
-            className="font-vt323 text-xl hover:opacity-75 transition-opacity"
+            className="font-vt323 hover:opacity-75 transition-opacity"
             style={{ color: "#00ffff", fontSize: "18px" }}
           >
             about
           </Link>
-          <span className="font-vt323 text-xl" style={{ color: "#00ffff", fontSize: "18px" }} aria-hidden="true">|</span>
-          <Link
-            href="/contact"
-            className="font-vt323 text-xl hover:opacity-75 transition-opacity"
+          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">·</span>
+          <a
+            href="mailto:alexmiz@gmail.com"
+            className="font-vt323 hover:opacity-75 transition-opacity"
             style={{ color: "#00ffff", fontSize: "18px" }}
           >
-            contact
-          </Link>
+            email
+          </a>
+          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">·</span>
+          <a
+            href="https://linkedin.com/in/alexmizrahi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-vt323 hover:opacity-75 transition-opacity"
+            style={{ color: "#00ffff", fontSize: "18px" }}
+          >
+            linkedin
+          </a>
+          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">·</span>
+          <span className="font-vt323" style={{ color: "#9090b8", fontSize: "18px" }}>
+            Brooklyn · Los Angeles
+          </span>
+          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">·</span>
+          <span className="font-vt323" style={{ color: "#9090b8", fontSize: "18px" }}>
+            available for hire
+          </span>
         </nav>
-
-        <p className="font-vt323 text-center" style={{ fontSize: "20px", color: "#ffff00", marginTop: "12px" }}>
-          🚧 new site, work in progress 🚧
-        </p>
       </div>
     </header>
     <div style={RAINBOW_STYLE} />
