@@ -1,7 +1,7 @@
 export type Photo = { src: string; caption?: string; href?: string };
 
 export type PhotoGroup = {
-  title: string;
+  title?: string;
   description?: string;
   photos: Photo[];
   slideshow?: boolean;
@@ -12,6 +12,7 @@ export type SubSection = {
   id: string;
   title: string;
   description: string;
+  descriptionSuffix?: { prefix?: string; text: string; href: string };
   headerImage?: string;
   photos: Photo[];
   groups?: PhotoGroup[];
@@ -36,8 +37,6 @@ export type Section = {
   subClosedColor?: string;
   subSections?: SubSection[];
 };
-
-const LOREM = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
 export const SECTIONS: Section[] = [
   {
@@ -147,7 +146,6 @@ export const SECTIONS: Section[] = [
     meta: "Communal Delights",
     description:
       "Original experiences that encourage active participation rather than passive attendance. Each conceived, named, branded, and produced from scratch.",
-    tag: "* let's make something *",
     openColor: "#fffacc",
     photoColor: "#f5ef9a",
     accentColor: "#8a7000",
@@ -157,7 +155,8 @@ export const SECTIONS: Section[] = [
       {
         id: "activations-lolla",
         title: "Lollakazooza",
-        description: "September 2025: A free kazoo festival located inside a 20' U-Haul truck, featuring stellar performances by attendees on the main stage, as well as a Petting Kazoo, Bekazzooling Station, VIP Clownge, and tootoring throughout the night. The truck was buzzing with energy. Follow @lollakazooza on Instagram for more.",
+        description: "September 2025: A free kazoo festival located inside a 20' U-Haul truck, featuring stellar performances by attendees on the main stage, as well as a Petting Kazoo, Bekazzooling Station, VIP Clownge, and tootoring throughout the night. The truck was buzzing with energy.",
+        descriptionSuffix: { prefix: " Follow ", text: "@lollakazooza on Instagram", href: "https://instagram.com/lollakazooza" },
         photos: [
           { src: '/images/activations/lollakazooza/lollakazooza1.jpg' },
           { src: '/images/activations/lollakazooza/lollakazooza2.jpg' },
@@ -201,7 +200,7 @@ export const SECTIONS: Section[] = [
           },
           {
             title: "Wristlemania",
-            description: LOREM,
+            description: "Held a thumb-wrestling competition in a miniature Thunderdome cage",
             photos: [
               { src: '/images/activations/pop-ups/wristlemania 2.png' },
             ],
@@ -265,7 +264,7 @@ export const SECTIONS: Section[] = [
     id: "communications",
     number: "04",
     title: "Communications",
-    meta: "A decade spanning philanthropy, hospitality, and advocacy.",
+    meta: "Hospitality, philanthropy, and advocacy",
     description: "",
     openColor: "#cce8ff",
     photoColor: "#9acef5",
@@ -303,9 +302,9 @@ export const SECTIONS: Section[] = [
               { src: '/images/communications/the-assemblage/press/hollywood-reporter.png', href: 'https://www.hollywoodreporter.com/news/stay-new-york-6-new-notable-hotels-1200142' },
               { src: '/images/communications/the-assemblage/press/entrepreneur.png', href: 'https://www.entrepreneur.com/article/310749' },
               { src: '/images/communications/the-assemblage/press/refinery29.png', href: 'https://www.facebook.com/share/v/1V8WhzQYzi/' },
-              { src: '/images/communications/the-assemblage/press/inverse.png', href: 'https://www.inverse.com/article/38973-coworking-the-assemblage-new-york-city' },
             ],
             textLinks: [
+              { outlet: "Inverse", headline: "The Assemblage is a Coworking Space that Wants You to Meditate Between Meetings", href: "https://www.inverse.com/article/38973-coworking-the-assemblage-new-york-city" },
               { outlet: "Bon Appetit", headline: "I Tried 'Wellness Coworking' and It Made Me Feel Profoundly Alone", href: "https://www.bonappetit.com/story/wellness-coworking" },
               { outlet: "Conde Nast Traveler", headline: "Hannah Bronfman on the Spa Treatments She'd Fly For", href: "https://www.cntraveler.com/story/wellness-influencer-hannah-bronfman-on-the-spa-treatments-shed-fly-for" },
               { outlet: "Fathom Away", headline: "She Has a Vision for Luxurious Co-Working, Co-Living, and Co-Traveling", href: "https://fathomaway.com/interview-magdalena-sartori-the-assemblage-nyc/" },
@@ -383,6 +382,7 @@ export const SECTIONS: Section[] = [
     id: "copywriting",
     number: "05",
     title: "Copywriting",
+    meta: "Agencies and brands",
     description: "",
     openColor: "#e8ccff",
     photoColor: "#d09af5",
@@ -394,11 +394,20 @@ export const SECTIONS: Section[] = [
         id: "copy-sapient",
         title: "SapientRazorfish",
         description: "Clients: Mercedes-Benz, smartUSA",
-        photos: [
-          { src: '/images/copywriting/sapientrazorfish/smart-car-logo.png' },
-          { src: '/images/copywriting/sapientrazorfish/mb.png' },
-          { src: '/images/copywriting/sapientrazorfish/mercedes_email.png' },
-          { src: '/images/copywriting/sapientrazorfish/Screen+Shot+2019-10-30+at+2.54.04+PM.png' },
+        photos: [],
+        groups: [
+          {
+            photos: [
+              { src: '/images/copywriting/sapientrazorfish/mb.png' },
+              { src: '/images/copywriting/sapientrazorfish/smart-car-logo.png' },
+            ],
+          },
+          {
+            photos: [
+              { src: '/images/copywriting/sapientrazorfish/Screen+Shot+2019-10-30+at+2.54.04+PM.png' },
+              { src: '/images/copywriting/sapientrazorfish/mercedes_email.png' },
+            ],
+          },
         ],
         photoColor: "#b878e8",
         accentColor: "#6a1a9a",

@@ -31,7 +31,7 @@ export default function PhotoStrip({ photos, accentColor }: PhotoStripProps) {
 
   return (
     <>
-      <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "center", gap: "12px", paddingBottom: "8px" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-start", justifyContent: "center", gap: "12px", paddingBottom: "8px" }}>
         {photos.map((photo) => (
           <IEFrame
             key={photo.src}

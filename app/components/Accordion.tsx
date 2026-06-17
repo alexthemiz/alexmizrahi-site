@@ -90,7 +90,7 @@ export default function Accordion() {
                 className="font-vt323 shrink-0"
                 style={{ fontSize: "20px", color: isOpen ? "#e8c84a" : "#c0c0e0" }}
               >
-                {isOpen ? "▼" : "►"}
+                {isOpen ? "«««" : "»»»"}
               </span>
             </button>
 
@@ -174,7 +174,7 @@ export default function Accordion() {
                               className="font-vt323 shrink-0"
                               style={{ fontSize: "16px", color: isSubOpen ? "#000040" : "#000060" }}
                             >
-                              {isSubOpen ? "▼" : "►"}
+                              {isSubOpen ? "«««" : "»»»"}
                             </span>
                           </button>
 
@@ -190,7 +190,7 @@ export default function Accordion() {
                             >
                               {sub.headerImage && (
                                 // eslint-disable-next-line @next/next/no-img-element
-                                <img src={sub.headerImage} alt="" style={{ height: "60px", width: "auto", display: "block", marginBottom: "12px" }} />
+                                <img src={sub.headerImage} alt="" style={{ height: "60px", width: "auto", display: "block", margin: "0 auto 12px" }} />
                               )}
                               {sub.description && (
                                 <p
@@ -198,18 +198,28 @@ export default function Accordion() {
                                   style={{ fontSize: "18px", color: "#1a1a2e" }}
                                 >
                                   {sub.description}
+                                  {sub.descriptionSuffix && (
+                                    <>{sub.descriptionSuffix.prefix ?? " "}<a
+                                      href={sub.descriptionSuffix.href}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      style={{ color: "#1a1a2e", textDecoration: "underline" }}
+                                    >{sub.descriptionSuffix.text}</a></>
+                                  )}
                                 </p>
                               )}
                               {sub.groups && sub.groups.length > 0 ? (
                                 <>
-                                  {sub.groups.map((group) => (
-                                    <div key={group.title} style={{ marginBottom: "20px" }}>
-                                      <p
-                                        className="font-vt323"
-                                        style={{ fontSize: "18px", color: "#1a1a2e", fontWeight: "bold", marginBottom: "8px" }}
-                                      >
-                                        {group.title}
-                                      </p>
+                                  {sub.groups.map((group, groupIndex) => (
+                                    <div key={group.title ?? groupIndex} style={{ marginBottom: "20px" }}>
+                                      {group.title && (
+                                        <p
+                                          className="font-vt323"
+                                          style={{ fontSize: "18px", color: "#1a1a2e", fontWeight: "bold", marginBottom: "8px" }}
+                                        >
+                                          {group.title}
+                                        </p>
+                                      )}
                                       {group.description && (
                                         <p
                                           className="font-vt323 leading-relaxed whitespace-pre-line"
