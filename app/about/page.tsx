@@ -42,7 +42,11 @@ export default function About() {
             className="font-vt323"
             style={{ fontSize: "22px", color: "#c0c0e0", lineHeight: 1.5 }}
           >
-            More recently, I&apos;ve started building things, too, both online and IRL. What started as a small pun gag in September 2022 has grown into a series of experiential passion projects, community tools, and interactive games: a kazoo festival in a box truck, an interactive experience that turns s&apos;mores into art, a peer-to-peer lending platform for the circular economy, a World Cup-inspired country trivia game. Whatever the project, I&apos;m always asking the same questions: what&apos;s missing? Is there friction we can remove? How can this be elevated? What would make it genuinely surprising instead of just fine?
+            More recently, I&apos;ve started building things, too, both online and IRL. What started as a small pun gag in September 2022 has grown into a series of experiential passion projects, community tools, and interactive games: a kazoo festival in a box truck, an interactive experience that turns s&apos;mores into art, a peer-to-peer lending platform for the circular economy, a{" "}
+            <a href="https://world-pop-finals.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ color: "#c0c0e0", textDecoration: "underline" }}>
+              World Cup-inspired country trivia game
+            </a>
+            . Whatever the project, I&apos;m always asking the same questions: what&apos;s missing? Is there friction we can remove? How can this be elevated? What would make it genuinely surprising instead of just fine?
           </p>
 
           {/* eslint-disable-next-line @next/next/no-img-element */}
