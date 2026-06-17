@@ -42,7 +42,7 @@ export default function Header() {
           >
             about
           </Link>
-          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">·</span>
+          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">|</span>
           <a
             href="mailto:alexmiz@gmail.com"
             className="font-vt323 hover:opacity-75 transition-opacity"
@@ -50,7 +50,7 @@ export default function Header() {
           >
             email
           </a>
-          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">·</span>
+          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">|</span>
           <a
             href="https://linkedin.com/in/alexmizrahi"
             target="_blank"
@@ -60,12 +60,12 @@ export default function Header() {
           >
             linkedin
           </a>
-          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">·</span>
-          <span className="font-vt323" style={{ color: "#9090b8", fontSize: "18px" }}>
+          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">|</span>
+          <span className="font-vt323" style={{ color: "#c0c0e0", fontSize: "18px" }}>
             Brooklyn · Los Angeles
           </span>
-          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">·</span>
-          <span className="font-vt323" style={{ color: "#9090b8", fontSize: "18px" }}>
+          <span className="font-vt323" style={{ color: "#4a4a7a", fontSize: "18px" }} aria-hidden="true">|</span>
+          <span className="font-vt323" style={{ color: "#c0c0e0", fontSize: "18px" }}>
             available for hire
           </span>
         </nav>
