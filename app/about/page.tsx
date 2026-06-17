@@ -34,18 +34,30 @@ export default function About() {
           >
             Most of my career has been about saying things: producing content for brands, managing communications for advocacy campaigns, and finding the right words for whatever needed saying. I&apos;ve written social media copy for credit cards and luxury cars; overseen comms for a coworking and events space that hosted presidential candidates and wellness influencers while serving plant-based elixirs and ayurvedic cuisine; and written and edited content for one of the world&apos;s largest philanthropies. Along the way, I built a Twitter account that landed me in the New York Times (turns out spoiling HuffPost tweets is a path to minor social media fame).
           </p>
+
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/about/alexmizrahi1.JPG" alt="Alex Mizrahi" style={{ display: "block", margin: "0 auto", maxWidth: "400px", width: "100%", height: "auto" }} />
+
           <p
             className="font-vt323"
             style={{ fontSize: "22px", color: "#c0c0e0", lineHeight: 1.5 }}
           >
             More recently, I&apos;ve started building things, too, both online and IRL. What started as a small pun gag in September 2022 has grown into a series of experiential passion projects, community tools, and interactive games: a kazoo festival in a box truck, an interactive experience that turns s&apos;mores into art, a peer-to-peer lending platform for the circular economy, a World Cup-inspired country trivia game. Whatever the project, I&apos;m always asking the same questions: what&apos;s missing? Is there friction we can remove? How can this be elevated? What would make it genuinely surprising instead of just fine?
           </p>
+
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/about/alexmizrahi2.jpg" alt="Alex Mizrahi" style={{ display: "block", margin: "0 auto", maxWidth: "400px", width: "100%", height: "auto" }} />
+
           <p
             className="font-vt323"
             style={{ fontSize: "22px", color: "#c0c0e0", lineHeight: 1.5 }}
           >
             With tools like Claude Code removing so many of the walls between a concept and reality, we now live in a world made for Ideas People. I&apos;ve been able to use AI to turn ideas I&apos;ve had for years — or came up with yesterday — into actual working prototypes, learning and iterating as I go. But I&apos;m deliberate about where I draw the line: yes to using AI for coding, productivity, and handling menial or tedious tasks; a firm no to outsourcing writing, design, or the creative elements that make something worth making.
           </p>
+
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/about/alexmizrahi3.webp" alt="Alex Mizrahi" style={{ display: "block", margin: "0 auto", maxWidth: "400px", width: "100%", height: "auto" }} />
+
           <p
             className="font-vt323"
             style={{ fontSize: "22px", color: "#c0c0e0", lineHeight: 1.5 }}
@@ -58,23 +70,6 @@ export default function About() {
           >
             Born in Los Angeles. Based in Brooklyn. Remote-friendly. Looking for collaborators on a project, need support for an event, or trying to fill a role on your comms team? Let&apos;s chat.
           </p>
-        </div>
-
-        {/* Photos */}
-        <div
-          className="mb-10 flex gap-4 flex-wrap justify-center"
-          style={{
-            borderTop: "1px dashed #666699",
-            borderBottom: "1px dashed #666699",
-            padding: "20px 0",
-          }}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/about/alexmizrahi1.JPG" alt="Alex Mizrahi" style={{ height: "200px", width: "auto", objectFit: "cover" }} />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/about/alexmizrahi2.jpg" alt="Alex Mizrahi" style={{ height: "200px", width: "auto", objectFit: "cover" }} />
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/about/alexmizrahi3.webp" alt="Alex Mizrahi" style={{ height: "200px", width: "auto", objectFit: "cover" }} />
         </div>
 
         {/* Resume buttons */}
