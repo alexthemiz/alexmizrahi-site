@@ -170,7 +170,7 @@ export default function AboutAccordion() {
             </span>
           </div>
           <span className="font-vt323 shrink-0" style={{ fontSize: "20px", color: writingsOpen ? "#e8c84a" : "#c0c0e0" }}>
-            {writingsOpen ? "▼" : "►"}
+            {writingsOpen ? "▼▼▼" : "▶▶▶"}
           </span>
         </button>
 
@@ -199,7 +199,7 @@ export default function AboutAccordion() {
                       </span>
                     </span>
                     <span className="font-vt323 shrink-0" style={{ fontSize: "16px", color: isSubOpen ? "#000040" : "#000060" }}>
-                      {isSubOpen ? "▼" : "►"}
+                      {isSubOpen ? "▼▼▼" : "▶▶▶"}
                     </span>
                   </button>
 
@@ -233,7 +233,7 @@ export default function AboutAccordion() {
             </span>
           </div>
           <span className="font-vt323 shrink-0" style={{ fontSize: "20px", color: communityOpen ? "#e8c84a" : "#c0c0e0" }}>
-            {communityOpen ? "▼" : "►"}
+            {communityOpen ? "▼▼▼" : "▶▶▶"}
           </span>
         </button>
 

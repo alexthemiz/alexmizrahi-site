@@ -90,7 +90,7 @@ export default function Accordion() {
                 className="font-vt323 shrink-0"
                 style={{ fontSize: "20px", color: isOpen ? "#e8c84a" : "#c0c0e0" }}
               >
-                {isOpen ? "«««" : "»»»"}
+                {isOpen ? "▼▼▼" : "▶▶▶"}
               </span>
             </button>
 
@@ -174,7 +174,7 @@ export default function Accordion() {
                               className="font-vt323 shrink-0"
                               style={{ fontSize: "16px", color: isSubOpen ? "#000040" : "#000060" }}
                             >
-                              {isSubOpen ? "«««" : "»»»"}
+                              {isSubOpen ? "▼▼▼" : "▶▶▶"}
                             </span>
                           </button>
 
