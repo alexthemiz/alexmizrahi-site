@@ -78,7 +78,7 @@ export default function About() {
         </div>
 
         {/* Resume buttons */}
-        <div className="flex gap-4 flex-wrap justify-center">
+        <div className="mb-10 flex gap-4 flex-wrap justify-center">
           <a href="/resumes/alexmizrahi_events-resume.pdf" target="_blank" rel="noopener noreferrer" style={{ ...BTN_BASE, color: "#ffff00", borderColor: "#ffff00" }}>
             ► Resume - Experiential
           </a>
@@ -86,6 +86,8 @@ export default function About() {
             ► Resume - Communications
           </a>
         </div>
+
+        <div style={{ borderTop: "1px dashed #666699" }} />
       </div>
 
       <div style={{ maxWidth: "860px", margin: "0 auto" }}>
