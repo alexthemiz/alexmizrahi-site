@@ -34,9 +34,19 @@ export default function About() {
           [bio copy TK]
         </p>
 
+        {/* Resume buttons */}
+        <div className="mb-10 flex gap-4 flex-wrap justify-center">
+          <a href="/resumes/alexmizrahi_events-resume.pdf" target="_blank" rel="noopener noreferrer" style={{ ...BTN_BASE, color: "#ffff00", borderColor: "#ffff00" }}>
+            ► Resume - Experiential
+          </a>
+          <a href="/resumes/alexmizrahi_communications-resume.pdf" target="_blank" rel="noopener noreferrer" style={{ ...BTN_BASE, color: "#00ffff", borderColor: "#00ffff" }}>
+            ► Resume - Communications
+          </a>
+        </div>
+
         {/* Photos */}
         <div
-          className="mb-10 flex gap-4 flex-wrap justify-center"
+          className="mb-12 flex gap-4 flex-wrap justify-center"
           style={{
             borderTop: "1px dashed #666699",
             borderBottom: "1px dashed #666699",
@@ -49,16 +59,6 @@ export default function About() {
           <img src="/images/about/alexmizrahi2.jpg" alt="Alex Mizrahi" style={{ height: "200px", width: "auto", objectFit: "cover" }} />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/about/alexmizrahi3.webp" alt="Alex Mizrahi" style={{ height: "200px", width: "auto", objectFit: "cover" }} />
-        </div>
-
-        {/* Resume buttons */}
-        <div className="mb-12 flex gap-4 flex-wrap">
-          <a href="/resumes/alexmizrahi_events-resume.pdf" target="_blank" rel="noopener noreferrer" style={{ ...BTN_BASE, color: "#ffff00", borderColor: "#ffff00" }}>
-            ► Resume - Experiential
-          </a>
-          <a href="/resumes/alexmizrahi_communications-resume.pdf" target="_blank" rel="noopener noreferrer" style={{ ...BTN_BASE, color: "#00ffff", borderColor: "#00ffff" }}>
-            ► Resume - Communications
-          </a>
         </div>
       </div>
 
