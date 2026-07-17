@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { VT323, Press_Start_2P } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const vt323 = VT323({
@@ -26,7 +27,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${vt323.variable} ${pressStart2P.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4D4XVMVXQ1"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4D4XVMVXQ1');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }
