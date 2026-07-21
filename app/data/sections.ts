@@ -1,4 +1,4 @@
-export type Photo = { src: string; caption?: string; href?: string };
+export type Photo = { src: string; caption?: string; href?: string; noFrame?: boolean; displayWidth?: number };
 
 export type PhotoGroup = {
   title?: string;
@@ -265,7 +265,7 @@ export const SECTIONS: Section[] = [
         description: "Peer-to-peer lending platform for the Burning Man community, and anyone who'd rather borrow than buy. Independently conceived and built as sole founder, handling everything: vibe coding, architecture, UX, branding, copy, and marketing strategy.",
         descriptionSuffix: { prefix: " — ", text: "check it out", href: "https://www.theplayaprovides.com" },
         photos: [
-          { src: '/images/playa-provides/theplayaprovides-home.png' },
+          { src: '/images/playa-provides/theplayaprovides-home.png', href: 'https://www.theplayaprovides.com', noFrame: true, displayWidth: 400 },
         ],
         photoColor: "#9adbc0",
         accentColor: "#1a7a4a",
@@ -276,7 +276,7 @@ export const SECTIONS: Section[] = [
         description: "A World Cup 2026-inspired country trivia shootout, with Single Player and Versus modes. Answer questions about two competing countries in a penalty shootout format, one question per kick. Conceived and built by me using Claude Code. Play at",
         descriptionSuffix: { prefix: " ", text: "triviakicks.com", href: "https://triviakicks.com", suffix: " — you’ll get a kick out of it." },
         photos: [
-          { src: '/images/trivia-kicks/triviakickshome.png' },
+          { src: '/images/trivia-kicks/triviakickshome.png', href: 'https://triviakicks.com', noFrame: true, displayWidth: 400 },
         ],
         photoColor: "#b0e0a0",
         accentColor: "#2a7a10",

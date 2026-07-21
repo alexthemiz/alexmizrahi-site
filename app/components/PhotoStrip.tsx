@@ -32,7 +32,12 @@ export default function PhotoStrip({ photos, accentColor }: PhotoStripProps) {
   return (
     <>
       <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-start", justifyContent: "center", gap: "12px", paddingBottom: "8px" }}>
-        {photos.map((photo) => (
+        {photos.map((photo) => photo.noFrame ? (
+          <a key={photo.src} href={photo.href} target="_blank" rel="noopener noreferrer" style={{ display: "block", flexShrink: 0 }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={encodeURI(photo.src)} alt={photo.caption ?? ""} style={{ width: `${photo.displayWidth ?? 400}px`, height: "auto", display: "block" }} />
+          </a>
+        ) : (
           <IEFrame
             key={photo.src}
             photo={photo}
