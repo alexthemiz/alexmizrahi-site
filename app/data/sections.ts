@@ -251,6 +251,7 @@ export const SECTIONS: Section[] = [
     id: "digital-projects",
     number: "03",
     title: "Digital Projects",
+    meta: "things I built",
     description: "",
     openColor: "#ccf0e0",
     photoColor: "#9adbc0",
