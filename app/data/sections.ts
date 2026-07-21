@@ -248,17 +248,37 @@ export const SECTIONS: Section[] = [
     ],
   },
   {
-    id: "tpp",
+    id: "digital-projects",
     number: "03",
-    title: "The Playa Provides",
-    meta: "in development",
-    description:
-      "Peer-to-peer lending platform for the Burning Man community, and anyone who'd rather borrow than buy. Independently conceived and built as sole founder, handling everything: vibe coding, architecture, UX, branding, copy, and marketing strategy.",
-    descriptionSuffix: { prefix: " — ", text: "check it out", href: "https://www.theplayaprovides.com" },
+    title: "Digital Projects",
+    description: "",
     openColor: "#ccf0e0",
     photoColor: "#9adbc0",
     accentColor: "#1a7a4a",
+    subClosedColor: "#a0dbc0",
     photos: [],
+    subSections: [
+      {
+        id: "dp-trivia-kicks",
+        title: "Trivia Kicks",
+        description: "World Cup 2026-inspired country trivia shootout. Answer questions about two competing countries in a penalty shootout format — one question per kick. Single player or Versus Mode via shared link. Independently conceived and built as sole founder.",
+        descriptionSuffix: { prefix: " — ", text: "play at triviakicks.com", href: "https://triviakicks.com" },
+        photos: [
+          { src: '/images/trivia-kicks/triviakickshome.png' },
+        ],
+        photoColor: "#b0e0a0",
+        accentColor: "#2a7a10",
+      },
+      {
+        id: "dp-tpp",
+        title: "The Playa Provides",
+        description: "Peer-to-peer lending platform for the Burning Man community, and anyone who'd rather borrow than buy. Independently conceived and built as sole founder, handling everything: vibe coding, architecture, UX, branding, copy, and marketing strategy.",
+        descriptionSuffix: { prefix: " — ", text: "check it out", href: "https://www.theplayaprovides.com" },
+        photos: [],
+        photoColor: "#9adbc0",
+        accentColor: "#1a7a4a",
+      },
+    ],
   },
   {
     id: "communications",
