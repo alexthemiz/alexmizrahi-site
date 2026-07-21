@@ -204,7 +204,7 @@ export default function Accordion() {
                                       target="_blank"
                                       rel="noopener noreferrer"
                                       style={{ color: "#1a1a2e", textDecoration: "underline" }}
-                                    >{sub.descriptionSuffix.text}</a></>
+                                    >{sub.descriptionSuffix.text}</a>{sub.descriptionSuffix.suffix ?? ""}</>
                                   )}
                                 </p>
                               )}

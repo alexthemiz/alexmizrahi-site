@@ -12,7 +12,7 @@ export type SubSection = {
   id: string;
   title: string;
   description: string;
-  descriptionSuffix?: { prefix?: string; text: string; href: string };
+  descriptionSuffix?: { prefix?: string; text: string; href: string; suffix?: string };
   headerImage?: string;
   photos: Photo[];
   groups?: PhotoGroup[];
@@ -259,24 +259,26 @@ export const SECTIONS: Section[] = [
     photos: [],
     subSections: [
       {
+        id: "dp-tpp",
+        title: "The Playa Provides",
+        description: "Peer-to-peer lending platform for the Burning Man community, and anyone who'd rather borrow than buy. Independently conceived and built as sole founder, handling everything: vibe coding, architecture, UX, branding, copy, and marketing strategy.",
+        descriptionSuffix: { prefix: " — ", text: "check it out", href: "https://www.theplayaprovides.com" },
+        photos: [
+          { src: '/images/playa-provides/theplayaprovides-home.png' },
+        ],
+        photoColor: "#9adbc0",
+        accentColor: "#1a7a4a",
+      },
+      {
         id: "dp-trivia-kicks",
         title: "Trivia Kicks",
-        description: "World Cup 2026-inspired country trivia shootout. Answer questions about two competing countries in a penalty shootout format — one question per kick. Single player or Versus Mode via shared link. Independently conceived and built as sole founder.",
-        descriptionSuffix: { prefix: " — ", text: "play at triviakicks.com", href: "https://triviakicks.com" },
+        description: "A World Cup 2026-inspired country trivia shootout, with Single Player and Versus modes. Answer questions about two competing countries in a penalty shootout format, one question per kick. Conceived and built by me using Claude Code. Play at",
+        descriptionSuffix: { prefix: " ", text: "triviakicks.com", href: "https://triviakicks.com", suffix: " — you’ll get a kick out of it." },
         photos: [
           { src: '/images/trivia-kicks/triviakickshome.png' },
         ],
         photoColor: "#b0e0a0",
         accentColor: "#2a7a10",
-      },
-      {
-        id: "dp-tpp",
-        title: "The Playa Provides",
-        description: "Peer-to-peer lending platform for the Burning Man community, and anyone who'd rather borrow than buy. Independently conceived and built as sole founder, handling everything: vibe coding, architecture, UX, branding, copy, and marketing strategy.",
-        descriptionSuffix: { prefix: " — ", text: "check it out", href: "https://www.theplayaprovides.com" },
-        photos: [],
-        photoColor: "#9adbc0",
-        accentColor: "#1a7a4a",
       },
     ],
   },
