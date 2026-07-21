@@ -273,7 +273,7 @@ export const SECTIONS: Section[] = [
       {
         id: "dp-trivia-kicks",
         title: "Trivia Kicks",
-        description: "A World Cup 2026-inspired country trivia shootout, with Single Player and Versus modes. Answer questions about two competing countries in a penalty shootout format, one question per kick. Conceived and built by me using Claude Code. Play at",
+        description: "A World Cup 2026-inspired country trivia shootout, with Single Player and Versus modes. Answer questions about two competing countries in a penalty shootout format, one question per kick. Conceived by me and built with Claude Code. Play at",
         descriptionSuffix: { prefix: " ", text: "triviakicks.com", href: "https://triviakicks.com", suffix: " — you’ll get a kick out of it." },
         photos: [
           { src: '/images/trivia-kicks/triviakickshome.png', href: 'https://triviakicks.com', noFrame: true, displayWidth: 400 },
