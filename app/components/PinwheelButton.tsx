@@ -75,7 +75,7 @@ export default function PinwheelButton() {
             lineHeight: 1,
           }}
         >
-          Spun for a pun
+          Spin the Punwheel
         </span>
       </button>
 
