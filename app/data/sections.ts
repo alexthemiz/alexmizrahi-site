@@ -29,6 +29,7 @@ export type Section = {
   url?: string;
   description: string;
   descriptionSuffix?: { prefix?: string; text: string; href: string };
+  descriptionLinks?: Array<{ prefix?: string; text: string; href: string; suffix?: string }>;
   tag?: string;
   openColor: string;
   photoColor: string;
@@ -47,6 +48,10 @@ export const SECTIONS: Section[] = [
     description:
       "Turned the traditional, humdrum s'mores bar into an interactive culinary and art experience where participants build never-before-s'mored creations from a vast range of ingredients, then give them full fashion-style photoshoots. Equal parts food science, participatory art, and campfire nostalgia.",
     descriptionSuffix: { prefix: " Now ", text: "available for booking", href: "https://smoreexplorers.com" },
+    descriptionLinks: [
+      { prefix: ". Follow ", text: "@smoreexplorers on Instagram", href: "https://instagram.com/smoreexplorers" },
+      { prefix: " or email ", text: "alex@smoreexplorers.com", href: "mailto:alex@smoreexplorers.com", suffix: "." },
+    ],
     openColor: "#ffe5cc",
     photoColor: "#f5c9a0",
     accentColor: "#b06000",

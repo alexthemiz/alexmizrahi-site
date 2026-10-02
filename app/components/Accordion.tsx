@@ -113,6 +113,19 @@ export default function Accordion() {
                       style={{ color: "#1a1a2e", textDecoration: "underline" }}
                     >{section.descriptionSuffix.text}</a></>
                   )}
+                  {section.descriptionLinks?.map((link) => (
+                    <span key={link.href}>
+                      {link.prefix ?? " "}
+                      <a
+                        href={link.href}
+                        {...(link.href.startsWith("mailto:")
+                          ? {}
+                          : { target: "_blank", rel: "noopener noreferrer" })}
+                        style={{ color: "#1a1a2e", textDecoration: "underline" }}
+                      >{link.text}</a>
+                      {link.suffix ?? ""}
+                    </span>
+                  ))}
                 </p>
 
                 <PhotoStrip
