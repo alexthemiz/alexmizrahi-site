@@ -34,7 +34,7 @@ Also accessible at alexmizrahi-site.vercel.app
 - Accordion headers: #000040
 - Fonts: Press Start 2P (name, section numbers), VT323 (everything else)
 - Active/open accent: #e8c84a (amber)
-- Open accordion colors: S'mores Lab = #ffe5cc (peach), Activations = #fffacc (lemon), TPP = #ccf0e0 (mint), Communications = #cce8ff (pale blue), Copywriting = #e8ccff (lavender)
+- Open accordion colors: S'more Explorers = #ffe5cc (peach), Activations = #fffacc (lemon), TPP = #ccf0e0 (mint), Communications = #cce8ff (pale blue), Copywriting = #e8ccff (lavender)
 - Sub-accordion closed backgrounds: darker versions of parent pastel
 - Sub-accordion text: #000060 closed, #000040 open
 - Rainbow pixel divider: above and below accordion list
@@ -59,7 +59,7 @@ Also accessible at alexmizrahi-site.vercel.app
 - /puns: TBD (concept not ready)
 
 ## Nested Accordion Structure
-01 S'mores Lab → Corporate Events, Festivals & Cultural, Private Celebrations
+01 S'more Explorers → Corporate Events, Festivals & Cultural, Private Celebrations
 02 Activations → Lollakazooza, Pop-Ups, Weddings & Private
 03 The Playa Provides → no sub-sections
 04 Communications → Open Society Foundations, The Assemblage, Blue State Digital

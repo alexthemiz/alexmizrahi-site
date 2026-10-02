@@ -42,11 +42,11 @@ export const SECTIONS: Section[] = [
   {
     id: "smores",
     number: "01",
-    title: "The S'mores Lab",
+    title: "S'more Explorers",
     meta: "ongoing project",
     description:
       "Turned the traditional, humdrum s'mores bar into an interactive culinary and art experience where participants build never-before-s'mored creations from a vast range of ingredients, then give them full fashion-style photoshoots. Equal parts food science, participatory art, and campfire nostalgia.",
-    descriptionSuffix: { prefix: " Now ", text: "available for booking", href: "https://www.thesmoreslab.com" },
+    descriptionSuffix: { prefix: " Now ", text: "available for booking", href: "https://smoreexplorers.com" },
     openColor: "#ffe5cc",
     photoColor: "#f5c9a0",
     accentColor: "#b06000",
